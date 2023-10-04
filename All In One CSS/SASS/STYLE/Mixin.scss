@@ -1,0 +1,104 @@
+@mixin border-red($value) {
+    border-radius: 10px;
+    background-color: $value;
+}
+
+// if we want not show ext class in css %ext
+// %ext
+.ext {
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    @include border-red(blue);
+    // @extend %ext  
+    @extend .ext;
+
+}
+
+h2 {
+    @include border-red(green);
+    color: black;
+    // @extend %ext;
+    @extend .ext;
+}
+
+p {
+    @include border-red(yellow);
+
+    color: green;
+    // @extend %ext
+    @extend .ext;
+    // padding: 220px ==220px
+    padding: 10 + 10 + px;
+}
+
+
+// operators in sass 
+// airthmatic
+// equality 
+// relational 
+// boolean,like and or not 
+// string 
+
+
+// interpolation 
+// use to concatenat property 
+@mixin mine($left, $unit) {
+    padding-#{$left}: $unit+px ;
+}
+
+h1 {
+    @include mine(left, 50);
+}
+
+// function 
+@function half($width) {
+
+    @return $width/2+px;
+}
+
+h1 {
+    width: half(1000);
+}
+
+// in-build funtions in sass  7 type
+// numbers()
+// string ()
+// color ()
+// list ()   like array
+// map()     like object
+// selector() 
+// interospection() 
+
+// same as js build-in function 
+// number function 
+// margin: round(22.44px)
+
+// string same 
+// to-lower-case("taiyeb")
+
+// color 
+// darken(blue, 70)
+// saturate(green, 30)
+
+// list like array 
+$list: 10px 100px 30px;
+
+p {
+    padding: nth($list, 2);
+}
+
+// map same as object 
+$map: (
+    "regular":100,
+    "medium": 100,
+    "bold":800
+);
+
+p {
+    font-weight: map-get($map, "bold");
+}

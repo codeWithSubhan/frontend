@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <script>
+        var bb = new Promise(function (resolve, reject) {
+
+            var a = 10;
+            if (a % 2 == 0) {
+                resolve("even no");
+            }
+            else {
+                reject("not even no");
+            }
+        })
+            bb.then((temp) => {
+                console.log(temp)
+            })
+            bb.catch((text1) => {
+                console.log(text1)
+            })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox properties</title>
+    <style>
+        .container {
+            height: 1000px;
+            width: 100%;
+            border: 2px solid black;
+
+            /* Initialize the container as a flex box */
+            /* Flex properties for a flex container */
+
+            display: flex;
+
+            /* flex-direction: row; (Default value of flex-direction is row) */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            /* align-content: space-evenly; */
+
+            /* flex-wrap: wrap; (Default value of flex-direction is no-wrap) */
+            /* flex-wrap: wrap-reverse; */
+
+            /* This is a shorthand for flex-direction: and flex-wrap: ;; */
+            /* flex-flow: row-reverse wrap; */
+
+            /* justify-content will justify the content in horizontal direction */
+            /* justify-content:  and align-item have same value; */
+            /* justify-content:center; */
+            /* justify-content: flex-end; */
+            /* justify-content: flex-start; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-between; */
+
+
+            /* justify-content will justify the content in vertical direction */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            /* align-items: stretch;         (default value ) */
+            /* align-items: baseline; */
+
+
+            /* only work when item comes in second row due to overflow  */
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            /* align-content: stretch;         (default value ) */
+            /* align-content:center; */
+            /* align-content: space-between; */
+            /* align-content: space-evenly; */
+            /* align-content: space-around; */
+        }
+
+        .item {
+            /* width: 200px; */
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+            flex-grow: 1;
+        }
+
+        /* #item-1 { */
+            /* flex item */
+            /* Higher the order, later it shows up in the container */
+            /* order: -2; */
+
+            /* flex-grow: 3;        width item */
+            /* flex-shrink: 2; */
+        /* } */
+
+        /* #item-2 { */
+        /* order: 0; */
+        /* flex-grow: 3;           how much a flex item will grow relative to the rest of the flex items*/
+        /* flex-shrink: 3 ;        length of item if set 0 item wil not shrink (small) */
+        /* flex-basis: 10px; */
+        /* when flex-direction is set to row flex-basis: will control width */
+        /* when flex-direction is set to column flex-basis: will control height */
+        /* } */
+
+        /* #item-3 { */
+        /* order: -1; */
+        /* flex: 2 2 230px; */
+        /* align-self: flex-start; */
+        /* align-self: flex-end; */
+        /* align-self: center; */
+        /* align-self: auto;        as parent align-item value  */
+        /* } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">fourth Box</div>
+        <div class="item" id="item-5">fifth Box</div>
+        <div class="item" id="item-6">sixth Box</div>
+
+        <!-- <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+</body>
+
+</html>

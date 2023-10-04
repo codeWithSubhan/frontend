@@ -1,0 +1,32 @@
+<html>
+
+<body>
+    <script>
+        var now = new Promise(function (resolve, reject) {
+
+            var a=2
+            if(a>='a'&&a<='z')
+           {
+
+               resolve("It's character")
+           } 
+           else if(a>='A'&&a<='Z')
+           {
+            resolve("It's character")
+           }
+           else{
+            reject("It's not a character")
+           }
+        })
+
+        now.then((result) => {
+            console.log(result)
+        })
+        now.catch((result2) => {
+            console.log(result2)
+        })
+
+    </script>
+</body>
+
+</html>

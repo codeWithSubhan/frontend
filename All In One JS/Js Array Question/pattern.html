@@ -1,0 +1,82 @@
+<html>
+    <body>
+       <script>
+           
+           for(let i=1; i<=5; i++)
+           {
+               for(let j=1; j<=5; j++)
+               {
+                   document.write("* ")
+               }
+               document.write("<br>")
+           }
+         document.write("<br> increasing order<br>")
+           for(let i=1; i<=5; i++)
+           {
+               for(let j=1; j<=i; j++)
+               {
+                   document.write("* ")
+               }
+               document.write("<br>")
+           }
+
+           document.write("<br> decreasing order<br>")
+           for(let i=1; i<=5; i++)
+           {
+               for(let j=i; j<=5; j++)
+               {
+                   document.write("* ")
+               }
+               document.write("<br>")
+           }
+
+           document.write("<br>decreasing space + increasing order <br>")
+           for(let i=1; i<=5; i++)
+           {
+               for(let j=i; j<=5; j++)
+               {
+                   document.write("&nbsp&nbsp&nbsp")
+               }
+               
+               for(let j=1; j<=i; j++)
+               {
+                   document.write("* ")
+               }
+               document.write("<br>")
+           }
+
+           document.write("<br>decreasing space + increasing order <br>")
+           for(let i=1; i<=5; i++)
+           {
+               for(let j=1; j<=i; j++)
+               {
+                   document.write("&nbsp&nbsp ")
+               }
+               for(let j=i; j<=5; j++)
+               {
+                   document.write("* ")
+               }
+
+               document.write("<br>")
+           }
+
+           document.write("<br>decreasing space + increasing order <br>")
+           for(let i=1; i<=5; i++)
+           {
+               for(let j=i; j<=5; j++)
+               {
+                   document.write("&nbsp&nbsp&nbsp")
+               }
+               
+               for(let j=1; j<=i; j++)
+               {
+                   document.write("* ")
+               }
+               
+
+               document.write("<br>")
+
+           }
+       </script>
+    </body>
+</html>

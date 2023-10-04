@@ -1,0 +1,29 @@
+<html>
+
+<body>
+    <script>
+        var large = new Promise(function (resolve, reject) {
+            var a = 77, b = 88, c = 1;
+            if (a > b && a > c) {
+                resolve(a)
+            }
+            else if (b > a && b > c) {
+                resolve(b)
+            }
+            else if (c > a && c > b) {
+                resolve(c)
+            }
+            else(
+                 reject()
+            )
+        })
+        large.then((item) => {
+            console.log(item+"  greater than: ")
+        })
+        large.catch(() => {
+            console.log("error")
+        })
+    </script>
+</body>
+
+</html>

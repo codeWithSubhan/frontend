@@ -1,0 +1,42 @@
+<html>
+
+<body>
+    <script>
+        function product() {
+            var a = [-4, 1, -8, 9, 6]
+            var fold = 1;
+            var sum = 0;
+
+
+            for (let i = 0; i <= a.length - 1; i++) {
+
+
+                for (let j = i + 1; j <= a.length - 1; j++) {
+
+
+                    for (let k = j + 1; k <= a.length - 1; k++) {
+
+
+                        fold = a[i] * a[j] * a[k]
+
+                        if (fold > sum) {
+
+                            sum = fold;
+                            fold = 1;
+                            var tem1 = a[i]
+                            var tem2 = a[j]
+                            var tem3 = a[k]
+
+                        }
+
+                        fold = 1;
+
+                    }
+                }
+            }
+            console.log(sum + " from: [" + tem1 + "," + tem2 + "," + tem3 + "]")
+        }product()
+    </script>
+</body>
+
+</html>

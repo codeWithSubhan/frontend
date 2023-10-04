@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            text-align: center;
+            background-color: tomato;
+
+            animation-name: subhan;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-delay: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            /* circle */
+            animation-direction: reverse;
+            animation-direction: alternate-reverse;
+            /* alternate but starting from to  */
+
+            animation-fill-mode: backwards;
+            animation-fill-mode: forwards;
+            animation-fill-mode: both;
+
+            animation: subhan 2s linear 0.1s infinite alternate;
+            animation-play-state: paused;
+        }
+
+        @keyframes subhan {
+            0% {
+                border-radius: 0%;
+                opacity: 1;
+            }
+
+            50% {
+                background-color: yellow;
+            }
+
+            100% {
+                border-radius: 50%;
+                opacity: 0.1;
+            }
+        }
+        div:hover{
+            animation-play-state: running;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Animation css
+    </div>
+</body>
+<script>
+    // linear	The animation has the same speed from start to end	
+    // ease	    Default value.The animation has a slow start, then fast, before it ends slowly
+    // ease -   in The animation has a slow start
+    // ease -   out	The animation has a slow end
+    // ease -in -out The animation has both a slow start and a slow end
+    // step - start  Equivalent to steps(1, start)
+    // step - end	Equivalent to steps(1, end)
+    // steps(int, start | end)	Specifies a stepping function, with two parameters.The first parameter specifies the number of intervals in the function. It must be a positive integer(greater than 0).The second parameter, which is optional, is either the value "start" or "end", and specifies the point at which the change of values occur within the interval.If the second parameter is omitted, it is given the value "end"
+    // cubic - bezier(n, n, n, n)	Define your own values in the cubic - bezier function Possible values are numeric
+    // values from 0 to 1
+    // initial	Sets this property to its default value.
+    // inherit	Inherits this property from its parent element.
+</script>
+
+</html>

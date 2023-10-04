@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-image properties advance</title>
+
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            text-align: justify;
+            /* padding: 20px; */
+            border: 30px solid black;
+            outline: 2px solid red;
+
+            border-image-source: url('https://mdn.github.io/css-examples/tools/border-image-generator/border-image-1.png');
+            border-image-slice: 30;
+            /* border-image-width: 100px; */
+            /* border-image-outset: 20px; */
+
+            /* border-image-slice: 30 20; */
+            /* border-image-repeat: repeat; */
+            border-image-repeat:round;
+            /* border-image-repeat:space; */
+            /* border-image-repeat:stretch; */
+            /* border-image-repeat: round stretch; */
+
+            /* border-image: url('https://mdn.github.io/css-examples/tools/border-image-generator/border-image-1.png') 30/30px/0px round stretch; */
+
+            /* border-image: linear-gradient(red,yellow) 25; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio cumque minus et esse in veritatis temporibus
+        quasi, quam iure quaerat facere, perferendis Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
+        cumque minus et esse in veritatis temporibus
+        quasi, quam iure quaerat facere, perferendis architecto ratione recusandae animi iusto quas beatae ipsam?
+    </div>
+</body>
+
+</html>

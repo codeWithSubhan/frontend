@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script>
+        // A Map holds key-value pairs where the keys can be any datatype
+
+        // var array=[1,2,3,4,5];
+        //  var array=[
+        //     {name:'subhan',age:20},
+        //     {name:'taiyeb',age:21},
+        //     {name:'abdl',age:20}
+        //  ]
+        // var b=array.map(test);             //return new array
+        // function test(x){
+        //     return x.name+" "+x.age;
+        // }
+        // console.log(b)      
+
+
+        //  How to Create a Map 
+        //  Passing an Array to new Map()
+        //  Create a Map and use Map.set()
+
+        // const fruits = new Map([
+        //     ["apples", 500],
+        //     ["bananas", 300],
+        //     ["oranges", 200]
+        // ])
+        // console.log(fruits)
+
+        // you can add elements to a Map with the set() method:
+        // const fruits = new Map();
+
+        // fruits.set("apples", 500);
+        // fruits.set("bananas", 300);
+        // fruits.set("oranges", 200);
+
+        // fruits.set("apples", 200);
+        // console.log(fruits)
+
+        // console.log(fruits.size)
+        // console.log(fruits.get("apples"))
+        // console.log(fruits.has("apples"))
+        // fruits.delete("apples")
+
+        // console.log(fruits)
+
+        // for (const [key, value] of myMap) {
+        //     console.log(`${key} = ${value}`);
+        // }
+
+        //  Method 
+        //  new Map() Creates a new Map <br />
+        //  set() Sets the value for a key in a Map<br />
+        //  get() Gets the value for a key in a Map<br />
+        //  delete() Removes a Map element specified by the key<br />
+        //  has() Returns true if a key exists in a Map<br />
+        //  forEach() Calls a function for each key/value pair in a Map<br />
+        //  entries() Returns an iterator with the [key, value] pairs in a Map<br />
+        //  Property Description<br />
+        //  size Returns the number of elements in a Map
+    
+
+        // Maps in JavaScript: We can use any type of key or value
+        // const myMap = new Map();
+        // const key1 = 'myStr', key2 = { }, key3 = function () { };
+        // // Setting map values
+        // myMap.set(key1, 'subhan');
+        // myMap.set(key2, 'blank object');
+        // myMap.set(key3, 'empty function');
+        // console.log(myMap);
+
+        // Getting the values from a Map
+        // let value1 = myMap.get(key3);
+        // console.log(value1);
+
+        // Get the size of the map
+        // console.log(myMap.size);
+
+        // You can loop using for..of to get keys and values
+        // console.log(myMap)
+        // // for (let [key, value] of myMap) {
+        // //     console.log(key, value);
+        // // }
+
+        // Get only keys
+        // for (let key of myMap.keys()) {
+        //     console.log(key);
+        // }
+
+        // Get only values
+        // for (let value of myMap.values()) {
+        //     console.log('value is ', value);
+        // }
+
+        // You can loop through a map using for each loop
+        // myMap.forEach((value, key) => {
+        //     console.log('Key is ', key);
+        //     console.log('Value is ', value);
+        // })
+
+        // Converting map to an array
+        // let myArray = Array.from(myMap);
+        // console.log('Map to array is ', myArray);
+
+        // Converting map keys to an array
+        // let myKeysArray = Array.from(myMap.keys());
+        // console.log('Map to keys array is ', myKeysArray);
+
+        // Converting map values to an array
+        // let myValuesArray = Array.from(myMap.values());
+        // console.log('Map to values array is ', myValuesArray);
+
+        // Object	                               Map
+        // Not directly iterable	              Directly iterable
+        // Do not have a size property	          Have a size property
+        // Keys must be Strings (or Symbols)	  Keys can be any datatype
+        // Keys are not well ordered	          Keys are ordered by insertion
+        // Have default keys	                  Do not have default keys
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<html>
+
+<body>
+
+    
+    <input type="text" id="user">
+    <script>
+        function Matrix() {
+
+            var a=[];
+            for(let i=0; i<=2; i++)
+            {
+                for(let j=0; j<=2; j++)
+                {
+                    a[i][j]=document.getElementById("user").value;
+                }
+            }
+
+            for(let i=0; i<=2; i++)
+            {
+                for(let j=0; j<=2; j++)
+                {
+                    console.log(a[i][j])
+                }
+            }
+        }Matrix()
+    </script>
+</body>
+
+</html>

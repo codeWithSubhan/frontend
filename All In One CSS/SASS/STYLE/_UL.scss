@@ -1,0 +1,12 @@
+ul{
+    li{
+        a{
+            display: block;
+            width: 100px;
+            padding: 10px 20px;
+            &:hover{
+                background-color: blueviolet;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.main .heading h1 {
+  color: green;
+}
+.main .heading p {
+  color: green;
+}
+.main ul li a {
+  display: block;
+  width: 100px;
+  padding: 10px 20px;
+}
+.main ul li a:hover {
+  background-color: blueviolet;
+}/*# sourceMappingURL=pars&Import.css.map */

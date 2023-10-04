@@ -1,0 +1,17 @@
+<html>
+
+<body>
+    <script>
+        const str = "subhan khan ahMad ";
+        const strArr = str.toLowerCase().trim().split(' ');
+        let UpperArr = "";
+        for (let i = 0; i < strArr.length; i++) {
+            [UpperArr, ...restLower] = strArr[i];
+            UpperArr = UpperArr.toUpperCase();
+            
+        }
+        console.log(strArr)
+    </script>
+</body>
+
+</html>

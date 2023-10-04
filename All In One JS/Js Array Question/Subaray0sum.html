@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <script>
+        function SubArray() {
+            var a = [4, 2, -3, 1, 6]
+            var sum = 0
+            for (let i = 0; i <= a.length - 1; i++) {
+                sum = 0;
+                for (let j = i; j <= a.length - 1; j++) {
+
+                    sum = sum + a[j]
+                    if (sum == 0) {
+                        console.log("true: index: " + i + " & " + j, sum)
+                        break;
+                    }
+                }
+            }
+        } SubArray()
+    </script>
+</body>
+
+</html>

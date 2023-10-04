@@ -1,0 +1,140 @@
+<html>
+
+<body>
+    <script>
+        function Method() {
+
+            let Array1 = [2, 5, 2, 1, "subhan","taiyeb"]
+
+            console.log("\n======== Is Array and type ==========")
+            console.log(Array.isArray(Array1));
+            console.log(typeof (Array1));
+
+
+            // The pop() method removes the last element from array and give deleted element
+            console.log("\n1 ======== Array1.pop( ) ==========")
+
+            let removed = Array1.pop()
+            console.log(Array1)
+            console.log("Removed Element: ", removed)
+
+
+            // push() ---  add new element in Array in end position and give new Array length
+            console.log("\n2 ======== Array1.push( ) ==========")
+
+            let length = Array1.push("taiyeb")
+            console.log(Array1)
+            console.log("Array length: ", length)
+
+            // Without push()  ---  add new element in Array in end position
+            // Array1[Array1.length] = "Rahat"
+            // console.log(Array1)
+
+
+            // The unshift() method   add new element in Array in biginning position and give new array length
+            console.log("\n3 ======== Array1.unshift( ) ==========")
+
+            let length1 = Array1.unshift(500)
+            console.log(Array1)
+            console.log("Array length: ", length1)
+
+
+            // The shift() method removes the first element from array and give deleted element and shift other elment to it's lower index:
+            console.log("\n4 ======== Array1.shift( ) ==========")
+
+            let removed1 = Array1.shift()
+            console.log(Array1)
+            console.log("Removed Element: ", removed1)
+
+            // Using delete leaves undefined holes in the array.
+            // console.log("\n======== delete Array1[0] ==========")
+            // delete Array1[0];
+            // console.log(Array1)
+
+
+            // The concat() method creates a new array by merging (concatenating) existing arrays:
+            console.log("\n5 ======== a.concat(b) ==========")
+            let a = ["subhan", "taiyeb", "abdul"]
+            let b = [18, 19, 14]
+
+            let c = a.concat(b)
+            console.log(c)
+
+            // let d = a.concat(b,c)                 ...can be concat() multiple array: 
+            // let p = a.concat("subhan")            ...can be single element added:
+
+
+            // The splice() method can be used to add new items to an array and returned new array with deleled items:
+            console.log("\n6 ======== Array1.splice( ) ==========")
+            // Array1.splice(1,0,"heena","iram")
+            let removed2 = Array1.splice(1, 2)
+            console.log(Array1)
+            console.log("Removed Element: ", removed2)         //...Array1.splice(0,2)
+
+
+
+            // The slice() method creates a new array and did not change in old Array:
+            console.log("\n7 ======== Array1.slice( ) ==========")
+
+            let New = Array1.slice(2)
+            console.log(New)
+
+            //let New = Array1.slice(1,3)              ...can be returned only selected string  
+
+
+            // The sort() use for shorting array: use for string:
+            console.log("\n8 ======== Array1.sort( ) ans .reverse()==========")
+
+            Array1.sort()                                       //....sort funtion for integer values
+            console.log(Array1)                                 //....Array1.sort(function (a, b) { return a - b });
+
+
+            Array1.reverse()                      // sort funtion in decending or (reverse) for integer values
+            console.log(Array1)                 // Array1.sort(function (a, b) { return b - a });
+
+
+            //indexOf() use to search element in Array(from starting) and give index value and if fount give 1 else -1:
+            //lastIndexOf() same but searching from last of the Array:
+
+
+            console.log("\n9 ======== Array1.indexOf( ) and .lastIndexOf()==========")
+            let get = Array1.indexOf("taiyeb")         //lastIndexOf(2)   //("search item", start)
+            if (get >=0) {
+                console.log("fount on index: ", get)
+            } else { console.log("sorry not found:") }
+
+
+            //includes() use to search element if found print true else false:
+            console.log("\n10 ======== Array1.includes( )==========")
+            let get1 = Array1.includes(2)
+            console.log(get1)
+
+
+            //some() use for search but first time condition true did not go a head just stop and print true else false:
+            // every() same above but differen only print true when all elemt is fulfill else false:
+            console.log("\n11 ======== Array1.includes( )==========")
+            let check = [11, 22,11,18, 45]
+            let my = check.some(checkMyAge)
+            console.log(my)
+
+            function checkMyAge(age) {
+                return age >= 18;
+            }
+
+            //find() same as some but print value:
+            //findIndex() same firint index valuend() but p
+            //filter() same but get all elemnts which true and create new array:
+            //
+
+            //    console.log("======== Array1.join( ) and .toString( ) ==========")
+            //    console.log(Array1.join("*"))
+            //    console.log(Array1.toString())
+
+
+
+
+        } Method()
+    </script>
+</body>
+
+</html>

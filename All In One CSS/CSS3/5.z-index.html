@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index property</title>
+</head>
+<style>
+    
+    div{
+       border: 2px solid red;
+       width: 200px;
+       height: 200px;
+       font-size: 25px;
+       position: absolute;
+       
+    }
+    #box1{
+       border: 2px solid green;
+       background-color: darkseagreen;
+       top: 200px;
+       left: 50px;
+       z-index: 3;
+    }
+    #box2{
+       border: 2px solid green;
+       background-color: red;
+       top: 250px;
+       left: 100px;
+       z-index: 2;
+    }
+    #box3{
+       border: 2px solid blue;
+       background-color: yellowgreen;
+       top:300px;
+       left: 150px;
+       z-index: 1;
+    }
+</style>
+
+<body>
+    <h1>The z-index property specifies the stack order of an element.</h1>
+    <p> When elements are positioned, they can overlap other elements. <br>
+        The z-index property specifies the stack order of an element (which element should be placed in front of, or
+        behind, the others).
+        <br>
+        An element can have a positive or negative stack order:
+    </p>
+
+    <div id="box1">A</div>
+    <div id="box2">B</div>
+    <div id="box3">C</div>
+</body>
+
+</html>

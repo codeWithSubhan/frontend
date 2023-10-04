@@ -1,0 +1,102 @@
+.page {
+    display: flex;
+    width:100%;
+}
+
+.section_left {
+    background-color: white;
+    width:50%;
+}
+
+.left_image {
+    margin-top:100px;
+    width:500px;
+}
+
+
+
+
+.section_right {
+    background-color: #004AAD;
+    width:50%;
+    height:690px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.login_form_content {
+    padding-top: 100px;
+    padding-left: 200px;
+}
+
+.login_heading {
+    color: white;
+    font-size: 30px;
+}
+
+.login_email_label {
+    padding-left: 10px;
+    color: white;
+}
+
+.login_password_label {
+    padding-left: 10px;
+    color: white;
+}
+
+.email_input {
+    width:380px;
+    height:40px;
+    border-radius: 30px;
+    border: none;
+    padding-left: 10px;
+
+}
+
+.email_input:focus {
+    outline: none;
+    width:380px;
+    height:40px;
+    border-radius: 30px;
+    border: none;
+    padding-left: 10px;
+}
+
+
+.password_input {
+    width:380px;
+    height:40px;
+    border-radius: 30px;
+    border: none;
+    padding-left: 10px;
+}
+.password_input:focus {
+    outline: none;
+    width:380px;
+    height:40px;
+    border-radius: 30px;
+    border: none;
+    padding-left: 10px;
+}
+
+.login_submit {
+    border:none;
+    width:380px;
+    height:35px;
+    border-radius: 30px;
+    font-size: 20px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.login_submit:hover {
+    border:none;
+    width:380px;
+    height:35px;
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+    background-color: black;
+}
+
+

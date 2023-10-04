@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heart project</title>
+    <style>
+
+        .heart{
+            position: relative;
+            height: 160px;
+            width: 100px;
+            background-color: palevioletred;
+            border-radius: 200px 200px 0px 0px;
+            margin:auto;
+            transform: rotate(45deg);
+            
+
+            z-index: -1;
+
+        }
+        .heart::before
+        { 
+            content: "";
+            height: 160px;
+            width: 100px;
+            background-color: palevioletred;
+            border-radius: 200px 200px 0px 0px;
+            margin:auto;
+            transform: rotate(-90deg);
+            position: absolute;
+            left:-30px;
+            top:30px;   
+
+            
+            
+        }
+ </style>
+</head>
+<body>
+    <div>
+        <p class="heart">
+
+        </p>
+    </div>
+</body>
+</html>

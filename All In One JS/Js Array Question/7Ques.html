@@ -1,0 +1,35 @@
+<html>
+
+<body>
+    <script>
+        function sorting() {
+            var a = [10, 12, 20, 30, 25, 40, 32, 31, 35, 50, 60]
+            var b = [], sub = []
+            var count = 0
+
+            for (let i = 0; i <= a.length - 1; i++) {
+                b.push(a[i])
+            }
+
+            b.sort(function sorting(a, b) { return a - b })
+
+            for (let i = 0; i <= a.length - 1; i++) {
+                if (a[i] != b[i]) {
+
+                    sub.push(a[i])
+                    var end = i
+
+                    if (count == 0) {
+                        count = 1;
+                        var start = i
+                    }
+                }
+            }
+
+            console.log("index: " + start + " to " + end)
+
+        }sorting()
+    </script>
+</body>
+
+</html>

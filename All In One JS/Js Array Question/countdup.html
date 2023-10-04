@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <script>
+        var a = [10, 20, 10, 30, 20, 10]
+        // var num=a;
+        var count = 0;
+        // num=new Set(a)
+        // console.log(num)
+
+        for (let i = 0; i <= a.length - 1; i++) {
+            count = 0;
+            for (let j = 0; j <= a.length - 1; j++) {
+                if (a[i] == a[j])
+                    count = count + 1
+            }
+            if (count>1) {
+                console.log(a[i])
+            }
+        }
+
+    </script>
+</body>
+
+</html>

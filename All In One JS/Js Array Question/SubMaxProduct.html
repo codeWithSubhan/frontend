@@ -1,0 +1,26 @@
+<html>
+
+<body>
+    <script>
+        function SubArray() {
+            var a = [2, 3, 4, 5, -1, 0]
+            var sum = 0, max = 0, temp = 0
+            for (let i = 0; i <= a.length - 1; i++) {
+                sum=0;
+                sum=a[i]
+                for (let j = i+1; j <= a.length - 1; j++) {
+
+                    sum = sum * a[j]
+
+                    if (sum > max) {
+                        max = sum;
+                        temp = sum;
+                    }
+                }
+            }
+            console.log(temp)
+        } SubArray()
+    </script>
+</body>
+
+</html>

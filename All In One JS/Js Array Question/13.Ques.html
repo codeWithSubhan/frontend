@@ -1,0 +1,48 @@
+<html>
+
+<body>
+    <script>
+        function circular() {
+            var a = [2, 1, -5, 4]
+            var sum = 0;
+            var count = 0;
+            var item;
+            var max = 0;
+
+            for (let i = 0; i <= a.length - 1; i++) {
+                if (count <= 9) {
+                    count = count + 1;
+                    sum = 0;
+
+                    for (let j = 0; j <= a.length - 1; j++) {
+
+                        sum = sum + a[j]
+                        if (sum > max) {
+                            console.log(sum)
+                            max = sum
+
+                            var tem1 = a[i]
+                            var tem2 = a[j]
+
+                        }
+                    }
+                    // console.log("==========")
+                    item = a[i]
+                    a.splice(i, 1)
+                    a.push(item)
+                    i = i - 1;
+                }
+                else {
+                    console.log(tem1)
+                    console.log(tem2)
+                    break;
+                }
+            }
+
+
+
+        }circular()
+    </script>
+</body>
+
+</html>

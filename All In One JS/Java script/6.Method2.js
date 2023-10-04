@@ -1,0 +1,186 @@
+<html>
+
+<body>
+    <script>
+        let str = "This is String";
+
+        // JS convert string to object when we perform method on string after performance js covert back to normal string 
+        // console.log(new String("ABCDE"))
+
+        // console.log(str[0])
+        // console.log(str[1])
+        // console.log(str[2])
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n0======== str.length ========== not change")
+        // str.length return string length
+        // let result = str.length
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n2======== str.toUpperCase( ) ========== not change")
+        // toUpperCase() return string with upperLetter.
+        // console.log('sentence'.toLowerCase());
+        // const result = str.toUpperCase()
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n3======== str.toUpperCase( ) ========== not change")
+        // toLowerCase() return string with lowerLetter.
+        // const result = str.toLowerCase()
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n4,5 es6======== str.at( ) and str.charAt( ) ========== not change")
+        // at() and charAt() return value by giving index number. default value: at(0),charAt(0)
+        // at() return undefined and charAt() return "" empty string, (in case of not find)
+        // str[str.length - 1] it shorthand property is str.at(-1) but not str.charAt().
+
+        // const result = str.at(1)                     //...str[0] == str.at(0) == str.charAt(0) both are same.
+        // const result = str.at(-1)                    //...at(index), charAt(index)
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n6,7,8======== str.trim( ) and trimStart( ) and trimEnd( ) ========== not change")
+        // trim() removes whitespace from both ends of a string and returns a new string.
+        // trimStart() removes whitespace from start only.
+        // trimEnd() removes whitespace from end only.
+
+        // const result = str.trim()
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n9======== str.split( ) ========== not change")
+        // split() divide String by searching given pattern and returns the new array.
+        // const result = str.split('i')
+        // const result = str.split(' ')                   //...split(separator, limit)
+        // const result = str.split('')
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n10======== str.slice( ) ========== not change")
+        // slice() extracts part of string and returns new string. default value: (0, str.length)
+        // const result = str.slice()                //...slice(indexStart, indexEnd)
+        // const result = str.slice(7)
+        // const result = str.slice(-3)
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n12======== str.concat( ) ========== not change")
+        // concat() concatenates multiples string and return a new string.
+
+        // const str2 = " and javascript"
+        // const result = str.concat(str2)
+        // console.log(result)
+
+        // const result = str.concat(str2,str2)           //...can be concat() multiple array:
+        // const result = str.concat("subhan")            //...can be single element added:
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n13 es6======== str.repeat( ) ========== not change")
+        // repeat() repeat string with given numbers and return new string
+        // const result = str.repeat(2)              //...repeat(count)
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n14,15 es6======== str.replace( ) and str.replaceAll( )========== not change")
+        // replace() replace 1st matches string with given string if not found return simple same string
+        // replaceAll() replace All matches string
+        // const result = str.replace("i","Q")
+        // const result = str.replace()                       //...replace(pattern, replacement)
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n16,17 es6======== str.padEnd( ) and str.padEnd( )========== not change")
+        // padEnd() padEnd end of string. if targetlength <= string length just return as-is it string
+        // const result = str.padStart(18,"x")
+        // const result = str.padEnd(18,"x")                     //...padEnd(totalLength, padString)
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n18======== str.includes( ) ========== not change")
+        // includes() performs a case-sensitive search found within another string return true or false
+        // const result = str.includes("el")               //...includes(searchString, position)
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n19,20======== str.startsWith( ) and str.endsWith( ) ========== not change")
+        // startsWith() check string begins with given string return true or false.
+        // startsWith() check string end with given string return true or false.
+        // const result= str.startsWith("is",2)                  //...startsWith(searchString, startPosition)
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n21,22======== str.indexOf( ) and str.lastIndexOF( ) ========== not change")
+        // indexOf() returns index of first substring and stop execute and else return -1 ..default start from 0
+        // lastindexOf() same but search from end of an array default: str.length-1 lastIndexOf(searchString, endPosition)
+
+        // const result = str.indexOf("is", 3);        //...indexOf(searchString, startPosition)
+        // const result = str.indexOf("");             //...0 due to search empty string and 2nd arg default 0
+        // const result = str.indexOf("", 3);          //...3 due to search empty string and 2nd arg 3
+        // const result = str.indexOf("", 13);            //...16 length due to search empty str and 13 > str length
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n23======== str.search( ) ========== not change")
+        // search() search for a match btw a regular expression and String. if found return index else -1
+        // const re = /[A-Z]/;
+        // const result = str.search(re)               //...search(regexp)
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n24,25======== str.match( ) and str.matchAll( ) ========== not change")
+        // match() match btw a regular expression and String and if found return an array of matches value else return null
+        // matchAll() return all matches value
+        // const re = /[A-Z]/;
+        // const result = str.match('i')               //...match(regexp)
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n26======== str.charCodeAt( ) ========== not change")
+        // charCodeAt() return ASCII CODE of character and else NaN and if index is not a number type Bydefault value: 0
+        // var result = str.charCodeAt(1)
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n27======== String.fromCharCode( ) ========== not change")
+        // fromCharCodeAt() return string by given ASCII CODE
+        // var result = String.fromCharCode()
+        // console.log(result)
+
+
+        /////////////////////////////////////// start //////////////////////////////////////////////////
+        // console.log("\n28======== Array1.toString( ) ========== not change")
+        // toString() convert array or number to string and return string
+        // const arr = [1,2,3];
+        // let result = arr.toString()
+        // console.log(typeof(result) ,result)
+
+
+        /////////////////////////////////////// start //////////////////////////////////////////////////
+        // console.log("\n29======== Array1.valueOf( ) ========== not change")
+        // valueOf() default method of string
+        // console.log(str.valueOf())
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height,width, border and backgrounds</title>
+
+    <style>
+        #first{
+            background-color:gainsboro;
+            height: 100px;
+            width: 455px;
+            border-width: 4px;         /*border: 4px solid green; */
+            border-color: green;               
+            border-style: solid;
+            border-radius: 11px;
+        }
+        #second{
+            background-color:yellow;
+            height: 100px;
+            width: 455px;
+            border: 4px solid blueviolet;
+            border-bottom-left-radius: 11px; 
+            border-bottom-right-radius: 11px;
+            border-top-right-radius: 11px;
+            
+            border-top: 4px solid red;
+            border-bottom: 4px solid green;
+            border-left: 4px solid orange;
+            border-right: 4px solid black;
+        }
+        #third{
+            height: 500px;
+            width: 455px;
+            background-image: url('https://www.codewithharry.com/assets/img/logo.png');
+            /* background-image: url('1.png'); */
+            border: 2px solid red;
+            background-repeat: no-repeat;   /*repeat-x and y*/
+            /* background-position: center; */
+            /* background-position: center left; */
+            /* background-position: center right; */
+            /* background-position: center top; */
+            /* background-position: 12px top; */
+            /* background-position: 100px top; */
+            /* background-position: 12px bottom; */
+            background-position: 100px 34px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>this is a heading</h3>
+    <p id="first">this is a paragraph</p>
+
+    <h3>this is a second heading</h3>
+    <p id="second">this is a second paragraph</p>
+
+    <h3>this is a third heading</h3>
+    <p id="third">this is a third second paragraph</p>
+
+    <p>four values - border-radius: 15px 50px 30px 5px; (first value applies to top-left corner, second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner): </p>
+    <p>Three values - border-radius: 15px 50px 30px; (first value applies to top-left corner, second value applies to top-right and bottom-left corners, and third value applies to bottom-right corner):</p>
+    <p>Two values - border-radius: 15px 50px; (first value applies to top-left and bottom-right corners, and the second value applies to top-right and bottom-left corners):    </p>
+    <p>One value - border-radius: 15px; (the value applies to all four corners, which are rounded equally:</p>
+
+
+
+
+
+
+
+    
+</body>
+</html>

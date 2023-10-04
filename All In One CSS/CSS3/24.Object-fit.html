@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object fil properties</title>
+    <style>
+        .card{
+            width: 30%;
+            height: 500px;
+            border: 2px solid red;
+            margin: 0 10px;
+            float: left;
+        }
+        .card img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-fit: contain;
+            
+            /* object-fit: scale-down; */
+            /* object-fit: fill; */
+            /* object-fit: none; */
+
+            /* object-position: left; */
+            /* object-position: 15px 20px; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <p>The CSS object-fit property is used to specify how an img or video should be resized to fit its containe</p>
+    fill -    This is default. The image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit
+    contain - The image keeps its aspect ratio, but is resized to fit within the given dimension
+    cover -   The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit
+    none -    The image is not resized
+    scale-down -   the image is scaled down to the smallest version of none or contain -->
+
+    <div class="container">
+        <div class="card">
+            <div>
+
+                <img src="https://www.w3schools.com/css/paris.jpg" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto mollitia nemo, ab aliquam libero
+                ipsam sint totam id laboriosam sed corrupti soluta eum ea adipisci veniam accusamus doloremque
+                consectetur dolores facere </p>
+        </div>
+
+        <div class="card">
+            <img src="https://www.w3schools.com/css/rock600x400.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto mollitia nemo, ab aliquam libero
+                ipsam sint totam id laboriosam sed corrupti soluta eum ea adipisci veniam accusamus doloremque
+                consectetur dolores facere </p>
+        </div>
+
+        <div class="card">
+            <img src="https://www.w3schools.com/css/paris.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto mollitia nemo, ab aliquam libero
+                ipsam sint totam id laboriosam sed corrupti soluta eum ea adipisci veniam accusamus doloremque
+                consectetur dolores facere </p>
+        </div>
+    </div>
+</body>
+
+</html>

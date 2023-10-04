@@ -1,0 +1,137 @@
+*{
+    /* font-family: Arial, Helvetica, sans-serif; */
+     margin: 0%;
+     padding: 0%;
+    
+    /* font-family: 'Raleway', sans-serif; */
+} 
+
+
+.nabar{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3eded;
+    /* border: 2px solid red; */
+}
+
+.nabar img{
+    
+    width: 78px;  
+    border-radius: 50%;
+}
+.top-right-heading{
+    
+    margin: 30px  23px;
+    /* list-style: none; */
+}
+.top-right-heading  a{
+    
+    /* text-decoration: none; */
+    /* list-style-type: none; */
+    text-decoration: none;
+    margin-left: 40px;
+}
+.nabar #search{
+    width: 416px;
+    height: 27px;
+
+    margin: 27px 5px 23px 226px;
+    border-radius: 28px;
+    padding-left:  10px;
+    outline: none;
+    border: none;
+
+    
+}
+.nabar #right-image{
+    height: 89px;
+    border-radius: 50%;
+}
+.nabar #right-cat-image{
+    height: 64px;
+    border-radius: 50%;
+    margin-top: 12px;
+    margin-left: 19px;
+    width: 57px;
+}
+.nabar #right-file-image{
+    height: 68px;
+    margin-top: 13px;    
+    border-radius: 50%;
+}
+.left-side-bar{
+    display: inline-block;
+    /* border: 2px solid red; */
+    width: 166px;
+    height: 600px;
+    background-color: #f3eded;
+}
+.left-side-bar .item{
+     display: inline-block;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-left: 14px;
+}
+.mid-top-navbar{
+   /* border: 2px solid red; */
+    display: flex;
+    margin-top: 20px;
+
+    
+    
+}
+.mid-top-navbar h1{
+    
+     margin-left: 20px;
+     margin-right: 725px;   
+ }
+ .mid-top-navbar select{
+    
+    
+    margin-right: 20px;   
+}
+
+.fourbox {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.fourbox1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top:20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourbox2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top:20px;
+}
+
+.box {
+    display: block;
+    /* background-color:plum; */
+    width:200px;
+    height:200px;
+    box-shadow: 0px 0px 5px plum;
+    border-radius: 5px;
+    margin-right: 100px;
+    border: 2px solid plum;
+}
+
+.box_flex {
+    display: flex;
+}
+.text{
+    height: 50px;
+    background-color: blueviolet;
+}

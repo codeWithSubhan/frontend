@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            background-color: gray;
+            border: 2px solid red;
+
+        }
+#box{
+    border: 2px solid  blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    font-size: 30px;
+    background-color:khaki;
+    /* margin: auto; */
+    /* transition-property:background-color; */
+    /* transition-duration: 1s; */
+    /* transition-timing-function: ease-in; */  
+    /* transition-timing-function: ease-out; */
+    /* transition-timing-function: ease-in-out; */
+    /* transition-delay: 2s; */
+    transition: all 0.5s ease-in-out 0.5s;
+}
+#box:hover{
+    cursor: pointer;
+    /* background-color: green;  */
+    /* width: 400px; */
+    /* height: 400px; */
+    /* border-radius: 100px; */
+    /* box-shadow: 10px 10px red, 25px 25px yellow; */
+    
+    /* transform: rotate(360deg); */
+    /* transform: skew(45deg); */
+    /* transform:scale(3); */
+    /* transform: translateY(23px); */
+    /* transform: translateX(23px); */
+    transform: translate(123PX, 123PX);
+}
+
+    </style>
+</head>
+<body>
+ <div class="container">
+     <div id="box">
+         this is my box
+     </div>
+ </div>   
+</body>
+</html>

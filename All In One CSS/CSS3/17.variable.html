@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables </title>
+    <style>
+        :root{
+            --color-text:white;
+            --background-color:black;
+            --fontFamily: arial;
+            --para-font:14px;
+            --heading_font:40px;
+        }
+        .box{
+
+            width: 300px;
+            height: 300px;
+            border: 2px solid red;
+            margin: 10px;
+            display: inline-block;
+            padding: 20px;
+            background-color: var(--background-color);
+        }
+        p{
+            font-size: var(--para-font);
+            color: var(--color-text);
+            font-family: var(--fontFamily);
+        }
+        h3{
+            font-size: var(--heading_font);
+            color: var(--color-text);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>heading one</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus exercitationem quo aliquam repudiandae harum incidunt nisi rem quis laudantium illo?</p>
+    </div>
+
+    <div class="box">
+        <h3>heading one</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus exercitationem quo aliquam repudiandae harum incidunt nisi rem quis laudantium illo?</p>
+    </div>
+
+    <div class="box">
+        <h3>heading one</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus exercitationem quo aliquam repudiandae harum incidunt nisi rem quis laudantium illo?</p>
+    </div>
+</body>
+</html>

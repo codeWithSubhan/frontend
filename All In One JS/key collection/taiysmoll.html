@@ -1,0 +1,38 @@
+<html>
+
+<body>
+    <script>
+        var yo = new Promise(function (resolve, reject) {
+            var a = [1, 2, 3, 7, 3, 9, 99]
+            var i;
+            var large =a[0]
+            var smoll =a[0]
+
+            for (let i = 0; i <= a.length - 1; i++) {
+                if (large < a[i]) {
+                large=a[i]
+                }
+                if (smoll > a[i]) {
+
+                  smoll=a[i]
+                }
+            }
+                    resolve(smoll)
+                    resolve(large)
+
+
+        })
+        yo.then((t) => {
+            console.log(t)
+        })
+        yo.then((tt) => {
+            console.log(tt)
+        })
+        yo.catch((ttt) => {
+            console.log(ttt)
+        })
+        
+    </script>
+</body>
+
+</html>

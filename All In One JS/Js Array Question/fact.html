@@ -1,0 +1,23 @@
+<html>
+    <body>
+      no  <input type="text" id="use">
+        <input type="button" onClick="fac();" value="submit">
+        <script>
+            function fac()
+            {
+                var a;
+            a=document.getElementById("use").value;
+
+            var fact=1;
+            var i=1;
+
+            while(i<=a)
+            {
+                fact=fact*i
+                i++;
+            }
+            document.write(fact);
+        }
+        </script>
+    </body>
+</html>

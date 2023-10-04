@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function count() {
+
+            var a = [13, 52, 44, 11, 44, 11, 11, 44]
+            var count = 0;
+
+            a.sort(function dup(a, b) { return a - b })
+            console.log(a)
+
+            for (let i = 0; i <= a.length - 1; i++) {
+                count = 0;
+                for (let j = 0; j <= a.length - 1; j++) {
+
+                    if (a[i] == a[j]) {
+                        count = count + 1
+                    }
+                }
+                if (count > 1) {
+                    a.splice(i, count - 1)
+                }
+                console.log(a[i] + ": " + count)
+            }
+
+        }count(  )
+    </script>
+</body>
+
+</html>

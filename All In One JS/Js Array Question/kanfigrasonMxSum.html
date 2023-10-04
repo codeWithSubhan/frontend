@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <script>
+            function configrationMaxSum()
+             {
+                 var a=[8,3,1,2]
+                 var sum=0,temp=0;
+
+                for(let i=0; i<=a.length-1; i++)
+                {
+                    a.push(a[0])
+                    a.shift()
+                    sum=0;
+                    
+                    for(let j=0; j<=a.length-1; j++)
+                    {
+                        sum=sum+a[j]*j
+                    }
+                    if(sum>temp){
+
+                        temp=sum;
+                    }
+                
+                }
+                console.log(temp)
+
+             }configrationMaxSum()
+        </script>
+    </body>
+</html>

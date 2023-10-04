@@ -1,0 +1,26 @@
+<html>
+  <body>
+    <script>
+      function promissum() {
+        var a = new Promise(function (resolve, reject) {
+          var x = 10;
+          var y = 49;
+          var sum = 0;
+          var total = 0;
+          sum = x + y;
+          total = sum;
+          resolve("the sum success");
+          reject("not sum");
+        });
+
+        a.then(() => {
+          console.log("total", +x + y);
+        });
+        a.catch(() => {
+          console.log(not);
+        });
+      }
+      promissum();
+    </script>
+  </body>
+</html>

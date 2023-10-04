@@ -1,0 +1,67 @@
+body{
+    font-family: 'Poppins', sans-serif;
+     /* The image used */
+  background-image: url("./bg.jpg");
+
+  /* Full height */
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: transparent;
+
+}
+.navbar img{
+    width
+    : 200px;
+    padding-left: 100px;
+    
+}
+.menu{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.item{
+
+    margin-left: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.left-image{
+    display: inline-block;
+    border: 2px solid red;
+}
+.left-image img{
+    width: 400px;
+}
+.right-text{
+    display: inline-block;
+    border: 2px solid red;
+}
+
+.logo_image {
+    width:400px;
+}
+.content{
+    display: flex;
+    /* padding-top: 100px; */
+
+}
+.left img{
+    width: 350px;
+}
+.left{
+    width: 50vw;
+}
+.right{
+    width: 50vw;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event Listener function</title>
+    <style>
+        #demo{
+        background-color: coral;
+        padding: 16px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <p id="demo">The addEventListener() method attaches an event handler to an element.</p>
+    </div>
+    <p id="inner">The addEventListener() Method</p>
+    <p>The removeEventListener() Method</p>
+
+    <script>
+        // element.addEventListener(event, function, useCapture)
+        // Do not use the "on" prefix.
+        // document.getElementById("demo").onclick=abc
+
+        // document.getElementById("demo").addEventListener("click",abc)
+        // function abc(){
+            
+        //     // document.getElementById("demo").style.fontSize= "30px"
+        // }
+
+        // document.getElementById("demo").addEventListener("mouseleave",abc=()=>{
+        //     document.getElementById("demo").style.border= "5px dotted red"
+        //     // this.style.border= "5px dotted red"
+        // })
+
+
+        // document.getElementById("demo").addEventListener("click",remove)
+        // function remove(){
+
+        //     this.removeEventListener("mouseleave",abc)
+        // }
+    
+        // document.getElementById("demo").addEventListener("click",abc=()=>{
+        //     alert("outer div")
+        // } ,true)
+        // document.getElementById("outer").addEventListener("click",abc=()=>{
+        //     alert("inner div")
+        // },true)
+    </script>
+</body>
+</html>

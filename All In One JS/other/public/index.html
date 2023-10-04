@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@400;500;600;700;800;900&family=Rokkitt:wght@500&display=swap');
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            height: 100vh;
+            background-color: #b5a7d7;
+            font-family: 'Rokkitt', serif;
+            overflow: hidden;
+        }
+
+        input,
+        button {
+            border: none;
+            outline: none;
+            padding: 16px;
+            width: 334px;
+            border-radius: 23px;
+            margin-bottom: -3px;
+            cursor: pointer;
+            transition: all 1s linear;
+            font-size: 19px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+        }
+
+        input {
+            border-radius: 22px;
+            cursor: text;
+        }
+
+        button {
+            margin-top: 20px;
+            font-weight: 700;
+        }
+
+        input:active,
+        button:active {
+        
+            width: 400px;
+        }
+
+        small {
+            color: white;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        @media only screen and (max-width: 400px) {
+            input,
+            button {
+                width: 90%
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Enter Your Password.</h2>
+    <input type="text" id="pwd" placeholder="Write here...">
+    <small id="error">
+        password must contain Number, Symbol, UpperLetter, LowerLetter <br>
+        & must have minimum 8 character.
+    </small>
+    <button type="submit" id="btn">SUBMIT</button>
+
+    <script>
+
+        const btn = document.getElementById("btn");
+        let errorMessage = [];
+        const symbols = ["!", "@", "#", "$", "%", "^", "&", "*", "()", "(", ")", "_", "-", "+", "=", "{}", "{", "}", "[]", "[", "]", "|", "/", ":", "?", "<", ">", ",", ".", ";", "'", "", "`", "~"];
+
+        function displayError(message, color) {
+            const error = document.getElementById("error")
+            error.innerText = `${message}`
+            error.style.color = `${color}`
+        }
+
+        function alpha(arr) {
+            errorMessage = [];
+            for (let i = 65; i <= 91; i++) {
+                if (arr.includes(String.fromCharCode(i))) {
+                    errorMessage.push("UpperCase")
+                    break;
+                }
+            }
+            for (let i = 97; i <= 123; i++) {
+                if (arr.includes(String.fromCharCode(i))) {
+                    errorMessage.push("LowerCase")
+                    break;
+                }
+            }
+            for (let i = 0; i <= symbols.length; i++) {
+                if (arr.includes(symbols[i])) {
+                    errorMessage.push("symbols")
+                    break;
+                }
+            }
+            for (let i = 0; i < arr.length; i++) {
+                if (!isNaN(arr[i])) {
+                    errorMessage.push("number")
+                    break;
+                }
+            }
+            return errorMessage;
+        }
+
+        btn.addEventListener("click", () => {
+            let pwd = document.getElementById("pwd").value;
+
+            pwd = pwd.trim()
+            let arr = [...pwd]
+
+            if (pwd === "") {
+                displayError("password can not be blank", "red")
+            } else if (pwd.length < 8) {
+                displayError("password can not be less than 8", "red")
+            }
+            else if (!(alpha(arr)).includes("UpperCase")) {
+                displayError("password must contain UpperLetter!", "red")
+            }
+            else if (!(alpha(arr)).includes("LowerCase")) {
+                displayError("password must contain LowerLetter!", "red")
+            }
+            else if (!(alpha(arr)).includes("symbols")) {
+                displayError("password must contain symbols!", "red")
+            }
+            else if (!(alpha(arr)).includes("number")) {
+                displayError("password must contain number!", "red")
+            }
+            else {
+                displayError("Login successful! ✔", "green")
+            }
+        });
+    </script>
+</body>
+
+</html>

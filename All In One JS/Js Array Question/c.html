@@ -1,0 +1,29 @@
+<html>
+    <head>
+        
+    </head>
+
+    1st Number <input type="text" id="first"><br><br>
+    <input type="button" onClick="coll();" value="submit">
+
+    <body>
+        <script>
+        function coll()
+        {
+        var test=document.getElementById("first").value;
+
+         if(test>0)
+         {
+             console.log("this is positive no");
+         }
+         else if(test<0){
+             console.log("this is nagitive no");
+         }
+         else
+         {
+            console.log("this is zero no");
+         }
+        }
+        </script>
+    </body>
+</html>

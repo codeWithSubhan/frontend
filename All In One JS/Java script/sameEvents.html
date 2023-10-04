@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>H2{cursor: pointer;}</style>
+</head>
+
+<body>
+    <ul>
+        <H2>1ST ONE</H2>
+        <H2>2ND ONE</H2>
+        <H2>3RD ONE</H2>
+        <H2>4TH ONE</H2>
+    </ul>
+    <script>
+        const H2 = document.querySelectorAll("H2");
+        const handleEvent = function () {
+            console.log(this.innerText); 
+            this.style.color="red";
+        };
+        H2.forEach(H2 => H2.addEventListener('click', handleEvent));
+
+        // this attached eventListener same as below 
+        // H2[0].addEventListener('click',handleEvent);
+        // H2[1].addEventListener('click',handleEvent);
+        // H2[2].addEventListener('click',handleEvent);
+        // H2[3].addEventListener('click',handleEvent);
+    </script>
+</body>
+</html>

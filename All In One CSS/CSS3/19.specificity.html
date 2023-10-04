@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pority</title>
+</head>
+<body>
+    <style>
+        /* external style sheet  */
+
+        *{color:red};
+        p{color:red};
+
+        .test{color:red};
+        p.test{color:red};
+        .navbar p.test{color: red}
+
+        #id{color:red};
+        p#id{color:red};
+        .navbar p#id{color: red}
+
+        /* inline style sheet has highest prority.. */
+
+        
+        /* more about specificity */
+        h1 {background-color: yellow;}
+        h1 {background-color: red;}
+
+        /* lastest rule wins */
+
+        /* ID selectors have a higher specificity than attribute selectors */
+
+        /* if you use the !important rule, it will override ALL previous 
+        styling rules for that specific property on that element! */
+        /* override id selctor also */
+    </style>
+</body>
+</html>

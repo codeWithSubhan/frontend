@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D and 3D Transform praperties..</title>
+    <!-- /* <p>The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).</p> */ -->
+    <style>
+        div{
+
+            width: 200px;
+            height: 150px;
+            background-color: brown;
+            /* margin: 5% auto;173deg */
+
+            /* transform: rotate(45deg); */
+            /* transform:skewX(20deg) */
+            /* transform:skewY(30deg) */
+            /* transform: skew(20deg,30deg); */
+            /* transform-origin: left top; */
+            /* transform-origin: 100% 100%; */
+            /* transform: translate(20px ,40px); */
+            /* transform: scale(2); */
+            /* transform: scale(2, 3); */
+
+            /* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+            /* transform: matrix(1, -0.3, 0, 1, 0, 0); */
+            /* transform: scale() skew() rotate(); */
+
+            /* we can all tranform properties with hover effect too */
+            /* perspective: 800px; */
+            /* perspective-origin: center center; */
+
+
+            transform-style: preserve-3d;
+            transform: rotateY(30deg);
+
+        }
+
+        ._3d{
+            background-color: pink;
+            /* transform: perspective(800px) rotateX(45deg); */
+            /* transform: perspective(800px) rotateY(45deg); */
+            /* transform-origin:center top; */
+            /* transform:perspective(800px) rotateY(30deg) translateZ(200px); */
+            /* transform:perspective(800px) rotateY(24deg) translate3d(30px ,50px,200px); */
+            /* transform:perspective(800px) scaleZ(3) rotateX(24deg); */
+            /* transform:perspective(800px) scale3d(2,2,1) rotateX(24deg); */
+
+         
+            transform: rotateX(60deg);
+            /* transform-origin: bottom; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+      <div class="_3d">
+        3d effect
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<html>
+
+<body>
+  <script>
+    //In JS  Numbers can be written with or without decimals.
+    // or Number represent floating-point numbers like 37 or -9.25.
+    // let x = 3.14;     // A number with decimals(.)
+    // let y = 3;        // A number without decimals
+
+    // Extra large or extra small numbers can be written with scientific (exponent) notation:
+    // let x = 123e5;    // 12300000
+    // let y = 123e-5;   // 0.00123
+
+    // JavaScript numbers are always stored as double precision floating point numbers,
+    // Integers (numbers without a period or exponent notation) are accurate up to 15 digits.
+    // let x = 999999999999999;        // x will be 999999999999999
+    // let y = 9999999999999999;       // y will be 10000000000000000
+    // let y = 9999999999999999e2;     // y will be 999999999999999.00
+    // The maximum number of decimals is 17.
+
+    // Floating point arithmetic is not always 100 % accurate:
+    // let x = 0.2 + 0.1;
+    // let x = (0.2 * 10 + 0.1 * 10) / 10;
+
+    // let x = 10;
+    // let y = 20;
+    // let z = "The result is: " + x + y;
+    // let z = x + y + "good guys" + 10 + 10;
+
+
+    // JavaScript will try to convert strings to numbers in all numeric operations implicity:
+    // let x = 100;
+    // let y = "10";
+    // let z = x / y;
+    // let z = x * y;
+    // let z = x - y;
+    // let z = x + y;
+    // console.log(z)
+    // console.log(typeof(z))
+
+    // JavaScript uses the + operator to concatenate the strings.
+
+
+
+    // NaN - Not a Number
+    // NaN is a JavaScript reserved word indicating that a number is not a legal number.
+
+    // Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number):
+    // let x = 100 / "Apple";      //NaN
+    // console.log(isNaN(x))
+
+    // However, if the string contains a numeric value , the result will be a number:
+    // let x = 100 / "10";    //10 number
+    // console.log(isNaN(x))
+
+    // NaN is a number: typeof NaN returns number:
+
+
+    /////////////////////////////////////// [start] //////////////////////////////////////////////////
+    // console.log("==================== Number('') ====================")
+    // Number(string) covert string number to number like:-"23" covert to 23 else return NaN
+    // let result = Number("23")         // covert to number 
+    // let result = Number(true)          
+    // let result = Number(false)
+    // let result = Number(null)
+    // let result = Number("")
+    // let result = Number(" ")
+    // let result = Number([])
+    // console.log(result)
+    
+    // let result = Number("subhan")       // NaN return 
+    // let result = Number("10subhan")
+    // let result = Number("10 10")
+    // let result = Number(undefined)
+    // let result = Number({})
+    // console.log(result)
+
+
+    /////////////////////////////////////// [start] //////////////////////////////////////////////////
+    // console.log("==================== Number.parseInt() and Number.parseInt() ====================")
+    // Number.parseInt() parse a string and returns an only integer of the specified radix or base.
+    // Number.parseFloat() parse a string and returns a floating point number.
+    // Number.parseInt === parseInt; // true both have same functionlity
+    // let result = Number.parseInt('10.88subhan',10)
+    // let result = Number.parseFloat('10.88subhan',10)
+    // console.log(result)
+
+
+    /////////////////////////////////////// [start] //////////////////////////////////////////////////
+    // console.log("==================== Number.isNaN() ====================")
+    // In JavaScript, NaN(Not a Number) is a keyword that indicates that the value is not a number.
+    // isNaN() global method do coercon to number
+    // const result = 4 - 'hello';
+    // console.log(result);              // NaN
+
+    // The built-in function Number.isNaN() can be used to find NaN yes return true else false
+    // let result = Number.isNaN(4 - 'hello')       // true
+    // let result = Number.isNaN(NaN);              // true
+    // let result = Number.isNaN(Number.NaN);       // true
+    // let result = Number.isNaN(0 / 0);            // true due to infinity = NaN
+    // console.log(result)
+
+    // Number.isNaN() doesn't attempt to convert to a number, so non-numbers always return false. The following are all false:
+    // let result = Number.isNaN(37);            
+    // let result = Number.isNaN("NaN");
+    // let result = Number.isNaN(undefined);
+    // let result = Number.isNaN({});
+    // let result = Number.isNaN("blabla");
+    // let result = Number.isNaN(true);
+    // let result = Number.isNaN(null);
+    // let result = Number.isNaN("37");
+    // let result = Number.isNaN("37.37");
+    // let result = Number.isNaN("");
+    // let result = Number.isNaN(" ");
+    // console.log(result)
+
+    // but global isNaN() coerces its parameter to a number:
+    // let result = isNaN("NaN");        // true
+    // let result = isNaN(undefined);    // true
+    // let result = isNaN({});           // true
+    // let result = isNaN("blabla");     // true
+    // let result = isNaN(true);         // false, this is coerced to 1
+    // let result = isNaN(null);         // false, this is coerced to 0
+    // let result = isNaN("37");         // false, this is coerced to 37
+    // let result = isNaN("37.37");      // false, this is coerced to 37.37
+    // let result = isNaN("");           // false, this is coerced to 0
+    // let result = isNaN(" ");          // false, this is coerced to 0
+    // console.log(result)
+
+
+    /////////////////////////////////////// [start] //////////////////////////////////////////////////
+    // console.log("==================== Number.isFinite() ====================")
+    // Number.isFinite() determines whether the passed value is a finite number return true else false
+    // let result = Number.isFinite(0);              // true
+    // let result = Number.isFinite(20.88);          // true
+    // let result = Number.isFinite(2e64);           // true
+    // let result = Number.isFinite(Infinity);       // false
+    // let result = Number.isFinite(NaN);            // false
+    // let result = Number.isFinite(-Infinity);      // false
+    // let result = Number.isFinite('20');           // false
+    // let result = Number.isFinite(true);           // false
+    // let result = Number.isFinite(null);           // false
+    // console.log(result)
+
+    // but global isNaN() coerces its parameter to a number:
+    // isFinite("0");                                 // true; coerced to number 0
+    // isFinite(true);                                // true; coerced to number 0
+    // isFinite(null);                                // false
+
+
+    /////////////////////////////////////// [start] //////////////////////////////////////////////////
+    // console.log("==================== Number.isInteger() ====================")
+    // Number.isInteger() check value is an integer true else false.
+    // let result = Number.isInteger(0);         // true
+    // let result = Number.isInteger(-1.0);      // true
+    // let result = Number.isInteger(-1.88);     // false due .(decimal num not integer(-1,0,1))
+    // let result = Number.isInteger("10");      // false
+    // let result = Number.isInteger(true);      // false
+    // let result = Number.isInteger(false);     // false
+    // let result = Number.isInteger([1]);       // false
+    // console.log(result)
+
+
+    /////////////////////////////////////// [start] //////////////////////////////////////////////////
+    // console.log("==================== Number.toFixed() ====================")
+    // return string and add decimal number 
+    // const result = (2.7).toFixed(3)
+    // console.log(result)
+  </script>
+</body>
+
+</html>

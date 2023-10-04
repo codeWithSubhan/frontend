@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <script>
+            function majority()
+            {
+                var a=[3,2,5,3,3]
+                var n=a.length/2;
+                var count=0;
+
+                for(let i=0; i<=a.length-1; i++)
+                {
+                    count=0;
+
+                    for(let j=0; j<=a.length-1; j++)
+                    {
+                        if(a[i]==a[j])
+                        {
+                            count=count+1;
+                        }
+                    }
+                    if(count>n)
+                    {
+                        console.log(a[i])
+                        break;
+                    }
+                }
+            }majority()
+        </script>
+    </body>
+</html>

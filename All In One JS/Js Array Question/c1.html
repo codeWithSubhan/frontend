@@ -1,0 +1,25 @@
+<html>
+
+<head>
+
+</head>
+
+1st Number <input type="text" id="first"><br><br>
+<input type="button" onClick="coll();" value="submit">
+
+<body>
+    <script>
+        function coll() {
+            var test = document.getElementById("first").value;
+
+            if (test % 5 == 0 && test % 11 == 0) {
+                console.log("this is divisible no");
+            }
+            else {
+                console.log("this is not divisible no");
+            }
+        }
+    </script>
+</body>
+
+</html>

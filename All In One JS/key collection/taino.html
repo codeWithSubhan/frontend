@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <script>
+        function num() {
+            var a = new Promise(function (resolve, reject) {
+                var no = 55;
+                if (no % 5 == 0 && no % 11 == 0) {
+                    resolve("succese")
+                }
+                else {
+                    reject("faied")
+                }
+            })
+            a.then(() => {
+                console.log("succese")
+            })
+            a.catch(() => {
+                console.log("faied")
+            })
+        } num()
+    </script>
+</body>
+
+</html>

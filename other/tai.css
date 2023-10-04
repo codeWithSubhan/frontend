@@ -1,0 +1,53 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    
+}
+body{
+    /* background-image: url("https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");  */
+    background-color: black;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.logo{
+    width: 200px;
+}
+.col-sm-auto{
+    /* border: 2px solid green; */
+    padding-top: 25px;
+    margin-right: 30px;
+}
+.col-sm-auto a{
+    
+    text-decoration: none;
+    color: white;
+   
+}
+.col-sm-2{
+    margin-right: 153px;
+}
+.img{
+    width: 350px;
+   
+}
+.img1{
+  
+    width: 200px;
+    margin-bottom: 60px;
+ 
+    
+}
+.one{
+    padding-top: 100px;
+}
+.two{
+    background-color: #151719;
+    width: 100vw;
+    
+}
+.two img{
+    width: 30px;
+}

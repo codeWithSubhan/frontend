@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <script>
+            function minMax()
+            {
+                var a=[20,30,1,5,8,400,70]
+                var temp=a[0];
+                var temp2=a[0];
+
+                for(let i=0; i<=a.length-1; i++)
+                {
+                    if(temp>a[i]&&a[i]>0)
+                    {
+                        temp=a[i]
+                    }
+                    else if(temp2<a[i])
+                    {
+                        temp2=a[i]
+                    }
+                }
+
+                console.log("Minimum value: ",temp)
+                console.log("Maximum value: ",temp2)
+            }minMax()
+            
+        </script>
+    </body>
+</html>

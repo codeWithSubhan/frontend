@@ -1,0 +1,313 @@
+<html>
+
+<body>
+    <script>
+        let Array1 = [2, 5, 2, 1, "subhan", "taiyeb", [1, 2]]
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n0======== Array.isArray( ) and typeof( ) ========== not change")
+        // Array.isArray() check if it's array return true else false
+        // typeof() return data type of any data
+        // console.log(Array.isArray(Array1));
+        // console.log(typeof (Array1));
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n1 ======== Array1.pop( ) ========== change")
+        // The pop() method removes the last element from array and return deleted element
+
+        // let removed = Array1.pop()
+        // console.log(Array1)
+        // console.log("Removed Element: ", removed)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n2 ======== Array1.push( ) ========== change")
+        // push() ---  add new element in Array in end position and return new Array length
+
+        // let length = Array1.push("taiyeb")
+        // console.log(Array1)
+        // console.log("Array length: ", length)
+
+        // Without push()  ---  add new element in Array in end position
+        // Array1[Array1.length] = "Rahat"
+        // console.log(Array1)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n3 ======== Array1.unshift( ) ========== change")
+        // The unshift() method   add new element in Array in biginning position and return new array length
+
+        // let length1 = Array1.unshift(500)
+        // console.log(Array1)
+        // console.log("Array length: ", length1)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n4 ======== Array1.shift( ) ========== change")
+        // The shift() method removes 1st element of an array and return deleted element and shift other elment to it's lower index:
+
+        // let removed1 = Array1.shift()
+        // console.log(Array1)
+        // console.log("Removed Element: ", removed1)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n5======== delete Array1[0] ========== change")
+        // Using delete leaves undefined holes in the array and return true
+
+        // let result = delete Array1[0];
+        // console.log(Array1)
+        // console.log(Array1[0])
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n6======== a.concat(b) ========== not change")
+        // The concat() method creates or return a new array by merging (concatenating) existing arrays:
+
+        // let a = ["subhan", "taiyeb", "abdul"]
+        // let b = [18, 19, 14]
+
+        // let c = a.concat(b)
+        // console.log(c)
+
+        // let d = a.concat(b,c)                 ...can be concat() multiple array:
+        // let p = a.concat("subhan")            ...can be single element added:
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n7======== Array1.splice( ) ========== change")
+        // The splice() method used to add new items and remove items to an array and return array of deleled items:
+
+        // console.log(Array1)
+        // Array1.splice(1,0,"heena","iram")                  //splice(start,remove, "add",add,add)
+        // let removed2 = Array1.splice(1, 2)
+        // console.log(Array1)
+        // console.log("Removed Element: ", removed2)         //...Array1.splice(0,2)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n8======== Array1.slice( ) ========== not change")
+        // The slice() method creates a new array and did not change in old Array: default value from 0
+
+        // let New = Array1.slice(0)            //can be use for shallow copy of arry
+        // let New = Array1.slice(1,3)          //...can be returned only selected string
+        // let New = Array1.slice(-2)           Array1.length-2 it's shorthan is slice(-2) are same
+        // console.log(New)                        // slice(start,end)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n9======== Array1.flat( ) ========== not change")
+        // The flat(depth) return new array with shollow copy of all sub-array with specified depth. default depth is 1
+        // let arr = [1, , 2, [3, [6, [7,[9, ,10]]]]];
+        // let result = arr.flat(2)                        //write Infinity in flat(Infinity)
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n10======== Array1.sort( ) ========== change")
+        // The sort() use for shorting array: use for string:
+
+        // Array1.sort()                             //....sort funtion for integer values
+        // console.log(Array1)                       //....Array1.sort(function (a, b) { return a - b });
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n11======== Array1.reverse( )========== change")
+        // Array1.reverse()                      // sort funtion in decending or (reverse) for integer values
+        // console.log(Array1)                   // Array1.sort(function (a, b) { return b - a });
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n12,13======== Array1.indexOf( ) and .lastIndexOf()========== not change")
+        // indexOf() use to search element in Array(from starting) and if fount return index number else -1:
+        // lastIndexOf() same but searching from last of the Array:
+
+        // let result = Array1.indexOf("taiyeb", 1)         //lastIndexOf(2)   //("search item", start)
+        // result >= 0 ?
+        // console.log("fount on index: ", result ):
+        // console.log("sorry not found:", result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n14 es6======== Array1.at( ) ========== not change")
+        // The at() return value by giving index number.
+        // arr[arr.length - 1] it shorthand property is arr.at(-1)
+
+        // let arr = [11, 22, 11, 18, 45]
+        // let result = arr.at(0)                        //...arr[0] === arr.at(0) both are same.
+        // let result = arr.at(-1)
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n15======== Array1.includes( )========== not change")
+        // //includes() use to search element if found return true else false:
+        // let result = Array1.includes(2)
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n16======== Array1.filter(function)========== not change")
+        // filter() create new array of all the element who fullfil the condition
+        // let arr = [11, 22, 11, 18, 45]
+        // let result = arr.filter(age => age >= 18)
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n17,18 es6======== Array1.find(function) and Array1.findIndex(function) ========== not change")
+        // find() finding element who fulfil condition and return element and stop execute and if not find return undefined
+        // findIndex() find element who fulfil condition and return index No and stop execute and if not find return -1
+
+        // let arr = [11, 22, 11, 18, 45]
+        // let result = arr.findIndex(age => age >= 18)
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n19,20 es6======== Array1.findLast(fnc) and Array1.findLastIndex(fnc) ========== not change")
+        // findLast() finding from end and return element if fulfile and stop execut and if not find return undefined
+        // findLastIndex() finding from end and return index No if fulfile and stop execute and if not find return -1
+        // let arr = [11, 22, 11, 18, 45]
+        // let result = arr.findLast(age => age >= 18)
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n21,22======== Array1.some(function) and Array1.every(function) ========== not change")
+        // some() use for if anyone is fulfile condition stop and return true else false:
+        // every() same above but differen only return true when all elemt is fulfill else false:
+
+        // let arr = [11, 22, 11, 18, 45]
+        // let result = arr.every(age => age >= 18)
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n23======== Array1.join( ) ========== not change")
+        // join() return string by concatenating of all elements of an array separated by specified separator
+        // let arr = ["Taiyeb  ","khan",1,1,2,"@","gmail",".","com"]
+        // let result = arr.join()
+        // let result = arr.join("")
+        // let result = arr.join("$")
+        // console.log(typeof arr, arr)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n24======== Array1.length ========== not change")
+        // length() return length of an array
+        // console.log(Array1.length)
+        // Array1.length = 2;                    //change
+        // console.log(Array1)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n25 es6======== Array1.fill( ) ========== change")
+        // fill() fill all element in array fill(value, start, length) default value: (value, 0, Array.length)
+        // Array1.fill(0, 1, Array1.length)
+        // console.log(Array1)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n26======== Array1.valueOf( ) ========== not change")
+        // valueOf() default function of array to print array //console.log(a)
+        // console.log(Array1.valueOf())
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n27 es6======== Array1.forEach(value,index,arr) ========== not change")
+        // The forEach() method executes a provided function once for each array element.
+        // let arr=["subhan","Taiyeb","Abdul","Henna","Iram Boss","Boss"]
+        // arr.forEach((value, index, myArr) => {
+        //     console.log(index, value)
+        // });
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n27 es6======== Array1.map(value,index,arr) ========== not change")
+        // The map() executes callBack func for each array element. and return new array
+        // let arr = ["subhan", "Taiyeb", "Abdul", "Henna", "Iram Boss", "Boss"]
+        // const newArr = arr.map((value, index, myArr) => {
+        //     return (value,index);
+        // });
+        // console.log(newArr)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n27 es6======== Array1.reduce(callBack, accumulatorValue) ========== not change")
+        // reduce() executes callback func on each element of the array.
+        // reducer adding the current array value to previous result and single value means sum of all elements.
+        // if no initialvalue set so accumutor set to be index 0 value and iteration from next element (index 1).
+        // typeError if the array contains no elements and initialValue is not provided.
+        // callbackFn invoked only array indexes which have assigned values. It is not invoked for empty slots
+        // let arr = [5, -10, 5, 10]
+        // const result = arr.reduce((acc, value, index, arr) => {
+        //     console.log(`${value} sum of ${acc}`)
+        // },0);
+        // console.log(result)
+
+        // maximum number 
+        // const result = arr.reduce((acc, value, index, arr) => {
+        //     // console.log(`${value} sum of ${acc}`)
+        //     if (acc > value) return acc;
+        //     else return value;
+        // },arr[0]);
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n28 es6======== Array1.entries() ========== not change")
+        // entries() returns a new array iterator object that contains the key/value pairs for each index in the array.
+        // it create earch element to an array with index/key like [0,"subhan"], [1,"Taiyeb"] and so on
+
+        // let arr = ["Subhan", "Taiyeb", "Abdul",[1, 2, 3, 4, 5, ]]
+        // // console.log(...arr.entries())
+        // for (const [index, value] of arr.entries()) {
+        //     // console.log(value)
+        //     console.log(index,value)
+        // }
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n29 es6======== Array1.keys() ========== not change")
+        // The keys() method returns a new array iterator object that contains the keys for each index in the array.
+        // let arr = ["Subhan", "Taiyeb", "Abdul", [1, 2, 3, 4, 5,]]
+        // console.log(...arr.keys())
+        // for (const key of arr.keys()) {
+        //     console.log(key)
+        // }
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n30 es6======== Array1.values() ========== not change")
+        // values() returns a new array iterator object that iterates the value of each item in the array.
+        // let arr = ["Subhan", "Taiyeb", "Abdul", [1, 2, 3, 4, 5,]]
+        // // console.log(...arr.values())
+        // for (const key of arr.values()) {
+        //     console.log(key)
+        // }
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n31 es6======== Array.from(iterable) ========== not change")
+        // Array.from() create new array, shallow-copied Array from an iterable like array string etc.
+        // let str = "subhan Khan"
+        // const result = Array.from(str, ((value, index) => {
+        //     return value.toUpperCase();                        //...Array.from(iterable, mapFun, thisArg)
+        // }))
+        // const result = Array.from({length:2},()=>1)
+        // console.log(result)
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n32 es6======== Array.of(types) ========== not change")
+        // The Array.of() create new Array of a variable number of arguments, type of the arguments.
+        // const result = Array.of("subhab",2,true,undefined,null,{lname:"khan"},[1,2,3],"")
+        // console.log(result)
+
+    </script>
+</body>
+
+</html>

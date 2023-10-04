@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .flex_container {
+            background: grey;
+            /* height: 500% ; */
+            border: 5px solid red;
+
+            /* The flex container properties are: */
+            /* flex-direction  */
+            /* flex-wrap  */
+            /* flex-flow  */
+            /* justify-content  */
+            /* align-items  */
+            /* align-content  */
+            
+
+            /* display: inline-flex;
+            display: flex; */
+
+            /* default value left to right main exies */
+            /* flex-direction: row;  */
+            /* flex-direction: row-reverse; */
+
+            /* actually main exies replace to y exies or cross axies */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+            /* to avoid overflow use flex-wrap property */
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap; */
+            /* wrap above  */
+            /* flex-wrap: wrap-reverse; */
+            /* please also use flex-direction:column to see effect */
+
+            /* The flex-flow property is shorthand property of flex-direction and flex-wrap. */
+            /* flex-flow: column-reverse row; */
+
+            /* The justify-content align items based on  main exies */
+            /* main start |size| main end ... and ... cross start |size| cross end */
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            /* please also use flex-direction:column to see effect */
+
+            /* The align-items align single line based on  cross exies */
+            /* main start |size| main end ... and ... cross start |size| cross end */
+            /* align-items: stretch; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            /* align-items: baseline; */
+            /* please also use flex-direction:column to see effect */
+
+            /* The align-content align multiple lines. based on cross exies and doesn't work on single line */
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            /* align-content: center; */
+            /* align-content: space-between; */
+            /* align-content: space-around; */
+            /* align-content: space-evenly; */
+        }
+
+
+
+        .item {
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+            width: 100px;
+
+            /* The flex item properties are: */
+            /* order */
+            /* flex-grow */
+            /* flex-shrink */
+            /* flex-basis */
+            /* flex */
+            /* align-self */
+
+            /* flex-grow: 1; */
+
+        }
+        
+        .items_1 {
+            background: #E6B0AA;
+            /* The order property specifies the order of the flex items.-1,0,1 : default: 0 */
+            /* The flex-basis property handle the width item. same as max-with*/
+            /* order: 1; */
+            /* flex-basis: 200px; */
+
+            /* width flex basic doesn't wwork flex-shirk: 2 or 4 other */
+            /* flex-basis: 200px; */
+            /* flex-shrink: 4; */
+        }
+
+        .items_2 {
+            background: #D7BDE2;
+            /* The flex-grow property as like a 1fr grid default: 0 */
+            /* flex-grow: 1; */
+        }
+
+        .items_3 {
+            background: #A9CCE3;
+            /* The flex-shrink oposit of 1fr it decrease width shrirk. dafault: 1 */
+            /* flex-shrink: 0; */
+            /* flex-shrink: 2; */
+        }
+
+        .items_4 {
+            background: #A3E4D7;
+            /* shorthand property of grow shrik basic  */
+            /* flex: 0 0 200px; */
+               
+        }
+
+        .items_5 {
+            background: #F9E79F;
+            /* The align-self property overrides the default alignment set by the container's align-items property. */
+            /* default value auto container herit align-item value */
+            /* align-self: auto; */
+            /* align-self: flex-end; */
+            /* align-self and justify-self same as above ; */
+        }
+
+        .items_6 {
+            background: #5D6D7E;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Flexbox is a one-dimensional layout method for arranging items in rows or columns -->
+    <!-- parent element: flex container -->
+    <!-- children element: flex items -->
+
+    <!-- The main axis is the axis running in the direction the flex items are laid out in (for example, as a row across the
+    page, or a column down the page.) The start and end of this axis are called the main start and main end.
+    The cross axis is the axis running perpendicular to the direction the flex items are laid out in. The start and end
+    of this axis are called the cross start and cross end. -->
+
+    <div class="flex_container">
+        <div class="item items_1">ITEM 1</div>
+        <div class="item items_2">ITEM 2</div>
+        <div class="item items_3">ITEM 3</div>
+        <div class="item items_4">ITEM 4</div>
+        <div class="item items_5">ITEM 5</div>
+        <div class="item items_6">ITEM 6</div>
+    </div>
+
+</body>
+
+</html>

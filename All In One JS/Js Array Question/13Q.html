@@ -1,0 +1,35 @@
+<html>
+
+<body>
+    <script>
+        function countPrime() {
+            var a = [1, 0, 2, 3, 4, 5, 6, 7, 8, 9, 11, 13]
+            var f = 0;
+            var count = 0;
+            for (let i = 0; i <= a.length - 1; i++) {
+                f = 0;
+                if (a[i] == 0 || a[i] == 1) {
+                    continue;
+                }
+                for (let j = 2; j <= a[i] / 2; j++) {
+
+                    if (a[i] % j == 0) {
+
+                        f = 1;
+                        break;
+                    }
+                }
+
+                if (f == 0) {
+                    count++
+                }
+
+            }
+            console.log(count)
+
+
+        }countPrime()
+    </script>
+</body>
+
+</html>

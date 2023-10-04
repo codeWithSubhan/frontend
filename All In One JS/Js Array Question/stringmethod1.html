@@ -1,0 +1,104 @@
+<html>
+
+<body>
+    <script>
+        function length() {
+            var str = "This is String"
+
+            console.log("====its length====")
+            var a = str.length;
+            console.log(a)
+
+            console.log("====its toLowerCase====")
+            var a = str.toLowerCase()
+            console.log(a)
+
+            console.log("====its toUpperCase====")
+            var a = str.toUpperCase()
+            console.log(a)
+
+            console.log("====its includes====")
+            var a = str.includes("i")
+            console.log(a)
+
+            console.log("====its startsWith====")
+            var a = str.startsWith("T")
+            console.log(a)
+
+            console.log("====its endsWith====")
+            var a = str.endsWith("ing")
+            console.log(a)
+
+            console.log("====its search, return position====")
+            var a = str.search("S")
+            console.log(a)
+
+            console.log("====its match count multiple char====")
+            var a = str.match(/i/g)
+            console.log(a)
+
+            console.log("====its indexOf====")
+            var a = str.indexOf("is")
+            console.log(a)
+
+            console.log("====its LastindexOf====")
+            var a = str.lastIndexOf("is")
+            console.log(a)
+
+            console.log("====its replace global and single also====")
+            var a = str.replace(/i/g, "v")
+            console.log(a)
+
+            console.log("====its strip remove space====")
+            var b = "  abcd "
+            var a = b.trim()
+            // alert(a)
+
+            console.log("====its charAt give char retur postion====")
+            var a = str.charAt("2")
+            console.log(a)
+
+            console.log("====its charCodeAt give poitions retur ascii code====")
+            var a = str.charCodeAt(11)
+            console.log(a)
+
+            console.log("====its charCodeAt give poitions retur ascii code of keyboARD====")
+            var a = String.fromCharCode(64)
+            console.log(a)
+
+            console.log("====its concate merge strings====")
+            var b = " programs"
+            var a = str.concat(b)
+            console.log(a)
+
+            console.log("====its split divide in aarey strings====")
+            var a = str.split("i")
+            console.log(a)
+
+            console.log("====its repeat  strings====")
+            var a = str.repeat(2)
+            console.log(a)
+
+            console.log("====its slice strings====")
+            var a = str.slice(2)
+            console.log(a)
+
+            console.log("====its substr strings====")
+            var a = str.substr(2, 6)
+            console.log(a)
+
+            console.log("====its substring strings====")
+            var a = str.substring(2, 6)
+            console.log(a)
+
+            console.log("====its substring strings====")
+            var a = 2
+            var b = a.toString()
+            var c=2
+            console.log(b+c)
+        }
+        length()
+    </script>
+</body>
+
+</html>

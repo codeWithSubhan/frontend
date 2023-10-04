@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: burlywood;
+        }
+
+        /* pseudo-class  */
+        /* selector:pseudo-class{property: value;} */
+
+        /* p:first-child{background-color: yellow;} */
+        /* li:last-child{background-color: yellow;}; */
+
+        /* li:first-of-type{background-color: yellow;} */
+        /* li:last-of-type{background-color: yellow;} */
+
+        /* p:nth-child(2){background-color: yellow;} */
+        /* 3n,2n+1,2n-1*/
+        /* li:nth-child(2n){background-color: yellow;} */
+        /* li:nth-last-child(1){background-color: yellow;} */
+
+
+        /* p:nth-of-type(1){background-color: yellow;} */
+        /* li:nth-last-of-type(1){background-color: yellow;} */
+
+        /* h1:only-child{background-color: yellow;} */
+        /* h1:only-of-type{background-color: yellow;} */
+
+        /* div:empty{border: 2px solid red;} */
+        /* p:not(.test){background-color: yellow;}  */
+        /* p:lang(fr){background-color: yellow;}  */
+
+        /* links */
+        /* a:link{color: red;}; */
+        /* a:hover{color: white;}; */
+        /* a:active{color: blue;}; */
+        /* a:visited{color: black;};   */
+        /*p:target {background-color: gold;} */
+
+        /* form all Attributes*/
+        /* input[type="text"]:focus{border: 2px solid palevioletred;outline-style: none;} */
+        /* border wil not work  */
+
+        /* input[type="checkbox"]:checked{box-shadow: 0 0 0 3px red;outline-style: none;} */
+        /* input[type="radio"]:checked */
+
+        /* input[type="text"]:disabled{border: 2px solid red;} */
+        /* input[type="text"]:enable{border: 2px solid red;} */
+
+        /* input:required{border: 2px solid red;} */
+        /* input:optional{border: 2px solid red;} */
+
+        /* input:in-range{border: 2px solid green;} */
+        /* input:out-of-range{border: 2px solid yellow;} */
+
+        /* input:read-only{background-color:hotpink;} */
+        /* input:read-write{background-color:green;} */
+
+        /* input:valid{background-color:hotpink;} */
+        /* input:invalid{background-color:red;} */
+
+        /* input:default{box-shadow: 0 0 0 1px red;} */
+        /* :root{--subhan:green} */
+        /* h1{color: var(--subhan);} */
+
+
+        /* pseudo-element */
+        /* selector::pseudo-element{property: value;} */
+        /* A CSS pseudo-element is used to style specified parts of an element. */
+        /* p::first-letter {color: #ff0000;font-size: 40px;} */
+        /* p::first-line {color: green;} */
+
+        /* ::selection{background-color: darkslategrey;color: wheat;} */
+        /* ::placeholder{color: green;padding-left: 10px;} */
+        /* ::marker{color: green;} */
+
+        /* insert data inside h1 tag or inside the any tag  */
+        /* h1::before{content: "subhan";color: blueviolet;display: block;} */
+        /* h1::after{content: "khan";color: blueviolet;display: block;} */
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Pseudo-classes:</h1>
+        <div></div>
+        <!-- <del>deleted text</del>
+        <h1>will not effect to h1</h1> -->
+    </div>
+
+    <div>
+        <p lang="en">A pseudo-class is used to define a special state of an element.</p>
+        <p lang="fr">Class (:) is define the pseudo class</p>
+        <p id="#first">A :hover,a:active,a:focus,a:visited</p>
+        <li>This is mine li:</li>
+    </div>
+    <br>
+
+    <p class="test">This is mine paragraph:</p>
+    <p>For an Example:</p>
+    <br>
+
+    <ul>
+        <li>Style an element when a user mouses over it</li>
+        <li>Style visited and unvisited links differently</li>
+        <li>Style an element when it gets focus</li>
+        <li>in nth class can we calculation</li>
+        <p>This is mine paragraph:</p>
+    </ul>
+
+    <br>
+    <li>nth-type: effect child without parents too.</li>
+    <li>only child effect parents has only one child</li>
+    <br>
+
+    <a href="#first">I'm a link</a>
+    <br><br>
+
+    <form action="">
+
+        Name:<input type="text" disabled>
+        Email:<input type="email" placeholder="User Name" required>
+        <br>
+        Number:<input type="number" value="5" min="5" max="18" readonly>
+        coding<input type="checkbox" checked>
+        cricket<input type="checkbox">
+        <br><br>
+        <button type="submit">click here</button>
+    </form>
+
+</body>
+
+</html>

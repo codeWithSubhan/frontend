@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    <script>
+        function commonElement() {
+            var A = [1, 100, 10, 20, 40, 80]
+            var B = [6, 7, 15, 20, 80, 100]
+            var C = [3, 4, 15, 20, 30, 70, 80, 120]
+
+            A.sort(function check(a, b){return a - b; })
+            B.sort(function check(a, b){return a - b; })
+            C.sort(function check(a, b){return a - b; })
+            
+
+            for (let i = 0; i < A.length; i++) {
+
+                let get1 = B.indexOf(A[i])
+                let get2 = C.indexOf(A[i])
+
+                if (get1 >= 0 && get2 >= 0) {
+                    console.log(A[i])
+                }
+            }
+        } commonElement()
+    </script>
+</body>
+
+</html>

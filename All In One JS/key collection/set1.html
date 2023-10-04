@@ -1,0 +1,42 @@
+<html>
+
+<body>
+    <script>
+        // var a=[1,2,3,4,5,5,1]
+        // var myset = new Set(a)
+        // console.log(a)
+        // console.log(myset)
+
+        // var b=[...myset]
+        // console.log(b)
+
+
+        let myset = new Set()
+        console.log(myset)
+
+        myset.add("one")
+        myset.add(99)
+        myset.add(9)
+        myset.add(100)
+        myset.add([1, 2, 3])
+
+        console.log(myset.has("one1"))
+        myset.delete(99)
+
+        console.log(myset)
+        console.log(myset.size)
+
+        // myset.clear()
+
+        for (let item of myset) {
+
+            console.log(item)
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

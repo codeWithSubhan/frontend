@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    <script>
+        function triplet() {
+
+            var a = [1, 2, 4, 3, 6]
+            var sum = 10;
+
+            for (i = 0; i <= a.length - 1; i++) {
+
+                for (let j = i + 1; j <= a.length - 1; j++) {
+
+                    for (let k = j + 1; k <= a.length - 1; k++) {
+
+                        if (sum == a[i] + a[j] + a[k]) {
+
+                            console.log(sum+" triplet on: a["+a[i]+","+a[j]+","+a[k]+"]")
+                            break;
+                        }
+                    }
+                }
+            }
+        } triplet()
+    </script>
+</body>
+
+</html>

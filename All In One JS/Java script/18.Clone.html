@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="li">
+        <li class="abc">subhan</li>
+        <li>subhan</li>
+    </ul>
+    <ul id="li-2">
+        <li class="abc">subhan</li>
+        <li>subhan</li>
+    </ul>
+    <div id="contain"></div>
+    <script>
+        var target = document.getElementById("li").children[0]
+        // var copy = target.cloneNode(true)       //false get formet...true get text also
+        // document.getElementById("contain").appendChild(copy)
+        // console.log(copy)
+
+        // var target = document.getElementById("li")
+        // console.log(target.hasAttribute("id")) 
+        // console.log(target.hasChildNodes()) 
+
+        var target = document.getElementById("li").children[0]        //everything must be same
+        var target2 = document.getElementById("li-2").children[1]
+
+        console.log(target.isEqualNode(target2))
+    </script>
+</body>
+
+</html>

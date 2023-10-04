@@ -1,0 +1,29 @@
+<html>
+
+<body>
+    <script>
+        var now = new Promise(function (resolve, reject) {
+
+            var a=2020;
+
+            if(a%4==0)
+           {
+               resolve("succes")
+           } 
+           else{
+            reject("failed")
+           }
+         
+        })
+
+        now.then((result) => {
+            console.log(result)
+        })
+        now.catch((result2) => {
+            console.log("it's not leap year: "+result2)
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<html>
+
+<body>
+    <script>
+        function Swap() {
+
+            var a = [55, 26, 30], b = []
+            var count = 0;
+
+            for (let i in a) { b[i] = a[i] }
+
+            b.sort(function sorting(a, b) { return a - b })
+
+
+            for (let i = 0; i <= a.length - 1; i++) {
+
+                if (b[i] != a[i]) {
+
+                    a.splice(i, 1, a[a.indexOf(b[i])])
+
+                    a.splice(a.indexOf(b[i]), 1, a[i])
+
+                    count++
+                }
+            }
+
+            console.log(count)
+
+        }Swap()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    <script>
+        function differentHight() {
+            var a = [1, 2, 3, 4, 5, 6, 20]
+            var k = 3, difference;
+
+            a.sort(function Short(a, b) { return a - b })
+
+            for (let i = 0; i <= a.length - 1; i++) {
+                if (a[i] <= k) {
+                    a[i] = a[i] + k;
+
+                } else {
+
+                    a[i] = a[i] - k;
+                }
+            }
+
+            difference = a[a.length - 1] - a[0];
+            console.log(difference)
+
+        } differentHight()
+    </script>
+</body>
+
+</html>

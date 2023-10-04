@@ -1,0 +1,11 @@
+.heading{
+
+    h1 {
+        //   $myColor: green;         //local variables
+        $myColor: green !global;  //local variables
+        color: $myColor;
+    }  
+    p {
+        color: $myColor;
+    }                               //nesting
+}

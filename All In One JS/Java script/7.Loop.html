@@ -1,0 +1,147 @@
+<html>
+
+<body>
+    <script>
+        // A loop repeats until a specified condition evaluates to false. it use for quick word
+        // execution steps 
+        // 1. initialization variable or expression
+        // 2. condition expression evaluated if no condition assume true
+        // 3. statement execute within block of code {}
+        // 4. update inc/dec or expression
+        // 5. execute statement then go step 4 
+
+
+        /////////////////////////////////////// start //////////////////////////////////////////////////
+        // statement is always executed after the condition is checked
+        // for (initialization; condition; inc/dec)
+        //     {statement}
+
+        // for (let i = 0; i < 5; i++) {
+        //     console.log(i)
+        // }
+
+
+        /////////////////////////////////////// start //////////////////////////////////////////////////
+        // statement is always executed once before the condition is checked
+        // do
+        //    {statement}
+        // while (condition);
+        // let i = 0;
+        // do {
+        //     console.log(i);
+        //     i++;
+        // } while (i < 5);
+
+
+        /////////////////////////////////////// start //////////////////////////////////////////////////
+        // A while statement executes as long as specified condition is true
+        // while (condition)
+        //    {statement}
+        // let i = 0;
+        // while (i < 5); {
+        //     i++;
+        //     console.log(i);
+        // };
+
+
+        /////////////////////////////////////// start //////////////////////////////////////////////////
+        // The for...of introduce ES6.
+        // The for..of loop allows you to iterate over iterable objects (arrays, sets, maps, strings etc).
+        // The for...of loop is used to iterate through the values of an iterable.
+        // for (value of iterable)
+        //    {statement}
+        // const students = ['John', 'Sara', 'Jack'];
+        // for (const value of students) {
+        //     console.log(value);
+        // }
+
+
+        /////////////////////////////////////// start //////////////////////////////////////////////////
+        // for..in loop in allows you to iterate over all property keys of an object.
+        // The for...in loop is used to iterate through the keys of an object.
+        // for (key in object)
+        //    {statement}
+        // const student = {
+        //     name: 'Monica',
+        //     class: 7,
+        //     age: 12
+        // }
+        // for (const keys in student) {
+        //     console.log(keys);
+        //     // console.log(keys,student[keys])
+        // }
+        // One of the better ways to iterate over an array is using the for...of loop.
+
+
+        
+        /////////////////////////////////////// start //////////////////////////////////////////////////
+        // The forEach() method executes a provided (callBack func) once for each array element.
+        // forEach() always returns undefined
+        // callbackFn is invoked only for array indexes which have assigned values. It is not invoked for empty slots.
+        // forEach() does not mutate the array on which it is called, but the function provided as callbackFn can
+        // There is no way to stop or break a forEach() loop.
+        // forEach() expects a synchronous function — it does not wait for promises.
+        // const Array1 = ["subhan", "Taiyeb", "Abdul", , "Heena"]
+        // const result = Array1.forEach((value, index, Array1) => {
+        //     console.log(index, value)
+        // })
+        // console.log(result)
+
+
+        /////////////////////////////////////// start //////////////////////////////////////////////////
+        // The map() method executes a provided (callBack func) once for each array element.
+        // map() returns new array and did not change old array
+        // callbackFn is invoked only for array indexes which have assigned values. It is not invoked for empty slots.
+        // There is no way to stop or break a map() loop.
+        // map() expects a synchronous function — it does not wait for promises.
+        // const Array1 = ["subhan", "Taiyeb", "Abdul", , "Heena"]
+        // const result = Array1.map((value, index, Array1) => {
+        //     return (index, value)
+        // })
+        // console.log(result);
+
+
+        /////////////////////////////////////// [start] //////////////////////////////////////////////////
+        // console.log("\n27 es6======== Array1.reduce(callBack, accumulatorValue) ========== not change")
+        // reduce() executes callback func on each element of the array.
+        // reducer adding the current array value to previous result and single value means sum of all elements.
+        // if no initialvalue set so accumutor set to be index 0 value and iteration from next element (index 1).
+        // typeError if the array contains no elements and initialValue is not provided.
+        // callbackFn invoked only array indexes which have assigned values. It is not invoked for empty slots
+        // let arr = [5, -10, 5, 10]
+        // const result = arr.reduce((acc, value, index, arr) => {
+        //     console.log(`${value} sum of ${acc}`)
+        // },0);
+        // console.log(result)
+
+        // maximum number 
+        // const result = arr.reduce((acc, value, index, arr) => {
+        //     // console.log(`${value} sum of ${acc}`)
+        //     if (acc > value) return acc;
+        //     else return value;
+        // },arr[0]);
+        // console.log(result)
+
+
+        
+        /////////////////////////////////////// start //////////////////////////////////////////////////
+        // Iterators
+        // let array = [10, 20, 30, 40, 50];
+        // let iter = array[Symbol.iterator]()
+
+        // iter.next()
+        // console.log("this is iterator loop")
+        // console.log(iter.next())
+        // console.log(iter.next().value)
+        // console.log(iter.next().done)
+
+        // let result = iter.next()
+        // while (!result.done) {
+        //     console.log(result.value)
+        //     result = iter.next()
+        // }
+    </script>
+
+</body>
+
+</html>

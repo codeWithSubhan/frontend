@@ -1,0 +1,72 @@
+body{
+    /* margin: 0; */
+    /* padding: 0%; */
+    /* width: 0%; */
+    background-color: green;
+}
+.container{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 590px;
+    width: 842px;
+    margin:40px auto;
+    background-color: rgb(37, 35, 35);
+    border-radius: 5px;
+}
+
+
+.image img{
+
+    width: 344px;
+    height: 502px;
+    /* border: 2px solid red; */
+}
+#box{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 677px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px palegoldenrod;
+    
+}
+#form{
+    /* border: 2px solid red; */
+    width: 500px;
+    margin-left: 23px;
+    
+    
+}
+#form input{
+    display: block;
+    /* width: 200px; */
+    /* border: 2px solid red; */
+       outline: none;
+       border-radius: 5px;
+       border: 1px solid green;
+       padding-left: 7px;
+       height: 23px;
+}
+#form label{
+    display: block;
+    /* padding-left: 23px; */
+    margin-top: 23px;
+}
+.btn{
+    display: block;
+    background-color: #5f5fc7;
+    border: none;
+    margin: 23px 0 0 0;
+    font-size: 21px;
+    border-radius: 657px;
+    padding: 7px;
+    width: 125px;
+}
+.check{
+ margin-top: 23px;
+}
+

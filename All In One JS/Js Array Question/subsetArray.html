@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <script>
+        function subsetArray() {
+           var  a1 = [11, 1, 13, 21, 3, 7]
+           var  a2 = [ 11, 3, 7, 12]
+           var f=0;
+            for(let i=0; i<=a2.length-1; i++)
+            {
+                   let get1=a1.indexOf(a2[i])
+                   if(get1==-1){
+                       f=1;
+                       console.log("not a subset")
+                       break;
+                   }
+            }
+        if(f==0){
+           console.log("a2 subset of a1")
+        }
+    }subsetArray()
+    </script>
+</body>
+
+</html>

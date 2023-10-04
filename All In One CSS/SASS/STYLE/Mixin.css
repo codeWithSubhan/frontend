@@ -1,0 +1,40 @@
+.ext, p, h2, h1 {
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  border-radius: 10px;
+  background-color: blue;
+}
+
+h2 {
+  border-radius: 10px;
+  background-color: green;
+  color: black;
+}
+
+p {
+  border-radius: 10px;
+  background-color: yellow;
+  color: green;
+  padding: 20px;
+}
+
+h1 {
+  padding-left: 50px;
+}
+
+h1 {
+  width: 500px;
+}
+
+p {
+  padding: 100px;
+}
+
+p {
+  font-weight: 800;
+}/*# sourceMappingURL=Mixin.css.map */

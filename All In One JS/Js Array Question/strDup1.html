@@ -1,0 +1,31 @@
+<html>
+
+<body>
+    <script>
+        function Duplicate() {
+            var str = "this is";
+            var max = 0, count = 0, repeat;
+            for (let i = 0; i <= str.length; i++) 
+            {
+                count=0;
+                 for (let j = 0; j <= str.length; j++)
+                    {
+                        if (str[i] == str[j]) 
+                          {
+                             count++
+                          }
+                    }
+
+              if (max < count) 
+                {
+                    max = count;
+                    repeat = str[i]    
+                }
+            }
+            console.log(repeat, max)
+
+        } Duplicate()
+    </script>
+</body>
+
+</html>

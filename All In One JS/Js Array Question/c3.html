@@ -1,0 +1,25 @@
+<html>
+
+<head>
+
+</head>
+
+no <input type="text" id="first"><br><br>
+<input type="button" onClick="coll();" value="submit">
+
+<body>
+    <script>
+        function coll() {
+            var test = document.getElementById("first").value;
+
+            if (test%4==0) {
+                console.log("this year is leap no");
+            }
+            else {
+                console.log("this is not leap ` no");
+            }
+        }
+    </script>
+</body>
+
+</html>

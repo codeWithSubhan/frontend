@@ -1,0 +1,52 @@
+<html>
+
+<body>
+    <script>
+        function Repeat() {
+            var a = [1, 2, 3, 4, 2, 5, 5, 6, 1, 8]
+            var b = [], c = []
+            var count = 0, f = 0, temp = 0, k = 0
+
+            for (let i = 0; i <= a.length - 1; i++) {
+
+                let get1 = a.indexOf(a[i])
+                let get2 = a.indexOf(a[i], i + 1)
+
+                if (get2 > 0) {
+
+                    k = 1
+
+                    b.push(a[i])
+                    count = get2 - get1
+                    c.push(count)
+
+                    let small = c[0]
+                    for (let j = 0; j <= c.length - 1; j++) {
+
+                        if (small > c[j]) {
+                            small = c[j]
+                            temp = b[j]
+                            f = 1;
+                        }
+                    }
+                }
+            }
+
+            if (k == 0) {
+                console.log("none of repeated Element found:")
+            }
+            else {
+                if (f == 0) {
+                    console.log("the first repeated & has smallest index: ", b[0])
+                }
+                else if (f == 1) {
+                    console.log("the first repeated & has smallest index: ", temp)
+                }
+            }
+
+            
+        } Repeat()
+    </script>
+</body>
+
+</html>

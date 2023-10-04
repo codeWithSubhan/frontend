@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    <script>
+        function subarray() {
+            var a = [-6, 4, -5, 8, -10, 0, 8]
+            var fold = 1;
+            var count = 0;
+            for (i = 0; i <= a.length - 1; i++) {
+                fold = 1
+                for (let j = i; j <= a.length - 1; j++) {
+
+
+                    fold = fold * a[j]
+                    if (fold > count) {
+                        count = fold
+
+
+                    }
+
+                }
+            }
+            console.log(count)
+        }subarray()
+    </script>
+</body>
+
+</html>

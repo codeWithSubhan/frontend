@@ -1,0 +1,38 @@
+<html>
+
+<body>
+    <script>
+        function subArray() {
+            var array = [1,4,2,3,1,5]
+            var sum=0,k=6,f=0;
+            for (let i = 0; i <= array.length - 1; i++) {
+                sum = 0;
+                for (let j = i; j <= array.length - 1; j++) {
+
+                    sum = sum + array[j]
+
+                    if (f == 0) {
+
+                        if (sum == k) {
+                            console.log("found: " + k + " between " + i + " and " + j + " position ")
+                            f = 1;
+                            break;
+
+
+                        }
+                    }
+                    else if (sum > k) {
+                        break;
+                    }
+
+                }
+            }
+                if(f==0){
+                    console.log("sorry not found:")
+            }
+        } subArray()
+
+    </script>
+</body>
+
+</html>

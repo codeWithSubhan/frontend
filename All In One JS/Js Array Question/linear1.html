@@ -1,0 +1,27 @@
+<html>
+
+<body>
+    <script>
+        function Linear() {
+            let arr = [1, 2, 1, 5, 2, 3, 5, 8, 10]
+            let item = 5;
+            for (let i of arr) {
+                if (item == i) {
+                    // console.log("number found: ", i)
+                    break;
+                }
+            }
+
+            let temp = arr.lastIndexOf(item)
+            if (temp >=0) {
+                console.log("element founed on index of : ", temp)
+            }
+            else {
+                console.log("not found")
+            }
+        } Linear()
+
+    </script>
+</body>
+
+</html>

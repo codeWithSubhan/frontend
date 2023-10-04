@@ -1,0 +1,30 @@
+<html>
+
+<body>
+    <script>
+        function product() {
+            var a = [10, 3, 5, 6, 2]
+            var b = []
+            var fold = 1;
+            for (i = 0; i <= a.length - 1; i++) {
+                fold = 1
+                for (let j = 0; j <= a.length - 1; j++) {
+
+
+
+                    if (i == j) {
+                        continue;
+                    } else {
+
+                        fold = fold * a[j]
+                    }
+
+                }
+                b.push(fold)
+            }
+            console.log(b)
+        }product()
+    </script>
+</body>
+
+</html>

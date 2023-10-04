@@ -1,0 +1,121 @@
+#first-section{
+    
+    border: 2px solid red;
+     display: flex;
+    height: 100vh;
+}
+
+.profile{
+    
+    background-color: #2F84EA;
+    
+}
+
+.profile img{
+    /* border: 2px solid red; */
+    width: 200px;
+}
+
+.profile ul li{
+     margin-top: 20px;
+    list-style-type: none;
+}
+.profile ul{
+    margin-top: 80px;
+   list-style-type: none;
+}
+
+.profile ul li a{
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    color: wheat;
+    margin-top: 23px;
+
+    
+}
+
+#left-section{
+    display: flex;
+    background-color: black;
+    height: 58px;
+    width: 100vw;
+
+}
+#left-section ul {
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+    text-decoration: none;
+}
+#left-section ul li a{
+    display: block;
+    text-decoration: none;
+    font-size: 23px;
+    margin-top: 13px;
+    margin-left: 40px;
+    color: white;
+}
+#left-section input{
+    width:529px;
+    height: 32px;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 10px;
+        margin-left: 100px;
+        padding-left: 7px;
+        /* outline: none; */
+        border-radius: 50px;
+   
+}
+
+#left-section img{
+    width: 100px;
+    height: 31px;
+}
+.four-boxes1{
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    position: absolute;
+    left: 285px;
+    top: 130px;
+}
+
+.four-boxes2{
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    position: absolute;
+    left: 50%;
+    top: 130px;
+    
+}
+
+.four-boxes3{
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    position: absolute;
+    left: 285px;
+    top: 400px;
+   
+}
+
+.four-boxes4{
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    position: absolute;
+    left: 50%;
+    top: 400px;
+   
+}
+
+@media screen and (max-width: 800px) {
+    .profile {
+      display: none;
+      background-color: #2F84EA;
+    }
+}

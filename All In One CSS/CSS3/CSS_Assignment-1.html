@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        /* div{
+            width: 500px;
+            height: 200px;
+            background-color: #fff;
+            border: 2px solid red;
+            padding: 20px;
+            margin: 10px;
+            border
+
+            box-sizing: border-box;}
+        div p{
+            margin: 0;}
+        */
+
+        /* simple sector */
+        /* div p {
+            color: green;
+        } */
+
+        /* h1.simple {
+            color: blue;
+        } */
+
+        /* #one {
+            font-size: 32px;
+        } */
+
+        /* * {
+            /* text-align: center; */
+        /* color: blue;
+        } */
+        /* body{
+
+            background-color: aquamarine;
+            background-image: url("https://uxwing.com/wp-content/themes/uxwing/download/44-hand-gestures/good.png");
+            background-size: 200px 200px;
+            background-repeat: repeat;
+            background-position: 95% 20px;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            border: 2px solid red;
+            height: 1000px;
+        } */
+        .display {
+
+            /* border: 2px outset red; */
+            /* display: block; */
+            /* display: inline; */
+            /* width: 500px;
+            height: 200px; */
+            /* display: inline-block; */
+            /* width: 500px;  */
+
+            /* display: none; */
+            /* visibility: hidden; */
+
+
+        }
+
+        div {
+
+            /* display: flex; */
+            /* justify-content: center; */
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* height: 100vh; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: wrap; */
+
+        }
+
+        input[type=button] {
+            border-style: dotted;
+            border-width: 2px;
+            border-color: purple;
+            border-radius: 5px;
+            font-size: large;
+            color: white;
+            background-color: green;
+            width: 150px;
+        }
+
+        h1::first-letter {
+            color: red;
+            background-color: yellow;
+            font-size: 50px;
+        }
+
+        p::first-line {
+            color: wheat;
+            background-color: purple;
+
+        }
+
+        ::selection {
+            color: red;
+            background-color: skyblue;
+        }
+
+        ul li:nth-child(1)::after {
+            content: "hi guys";
+            /* color: royalblue; */
+
+        }
+
+        ul li:nth-child(1)::before {
+            content: "hello";
+            /* color: brown; */
+
+        }
+
+        ul li:hover {
+            cursor: pointer;
+            /* color: cyan; */
+        }
+
+        ul li:active {
+            /* cursor: pointer; */
+            /* color: blue !important; */
+        }
+
+        ul a li:visited {
+            cursor: pointer;
+            color: green !important;
+        }
+
+        #animation {
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition-property: all;
+            transition-delay: 0.5s;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+
+        }
+
+        #animation:hover {
+            transform: rotate(360deg);
+            /* transform: translateX(3000px); */
+            background-color: burlywood;
+        }
+
+
+
+
+
+        /* positions start hear */
+        #position {
+            border: 2px solid blue;
+            color: red;
+            background-color: skyblue;
+            width: 299px;
+            height: 299px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+
+            /* position: static; */
+            /* position: relative; */
+            /* position: absolute; */
+            /* position: sticky; */
+            position: fixed;
+            /* top: 30px; */
+
+        }
+
+        #outer {
+            border: 2px solid red;
+            position: relative;
+            width: 500px;
+
+            height: 6000px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- box model start here -->
+    <!-- <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi molestiae, culpa corrupti nulla tempora
+            officia corporis iure tenetur consequatur tempore.</p>
+    </div> -->
+    <!-- <div>
+
+        <h1>CSS Selectors</h1>
+
+        <h3 class="simple">element Selector</h3>
+        <p> this is simple selector</p>
+        <p class="simple"> this is simple selector</p>
+        <p id="one"> this is simple selector</p>
+
+    </div> -->
+
+    <!-- display start here -->
+    <!-- <div>
+
+        <p class="display">1 this is an example</p>
+        <p> 2 this is flex box</p>
+        <p class="display">3 this is an example</p>
+        <p> 4 this is flex box</p>
+        <p class="display"> 5 this is an example</p>
+        <p> this is flex box</p>
+    </div>
+
+    <input type="button" value="click here"> -->
+
+    <!-- pseudo element start herar -->
+
+    <!-- <h1>This is pseudo element Selector</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis voluptatibus eaque officia eos sit nemo
+        ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis voluptatibus eaque officia eos sit nemo n ipsum
+        dolor sit amet, consectetur adipisicing elit. Blanditiis voluptatibus eaque officia eos sit nemo n ipsum dolor
+        sit amet, consectetur adipisicing elit. Blanditiis voluptatibus eaque officia eos sit nemo n ipsum dolor sit
+        amet, consectetur adipisicing elit. Blanditiis voluptatibus eaque officia eos sit nemo n ipsum dolor sit amet,
+        consectetur adipisicing elit. Blanditiis voluptatibus eaque officia eos sit nemo n nesciunt quas qui facilis
+        error, vero doloremque incidunt sapiente iste enim fugit ipsa quia alias.
+    <ul>
+       
+        <li>my name is Taiyeb Ahamad</li>
+        <li>how are you?</li>
+        <li>i am well and good</li>
+        <a href="https://www.youtube.com/watch?v=RqTXyLThQsw"><li>what is your name?</li></a> 
+        <li>what about you?</li>
+    </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, mollitia! Sit deserunt exercitationem
+            placeat, nisi ullam fugiat necessitatibus illo maxime sunt odit doloribus corporis quos corrupti quibusdam,
+            repudiandae nulla beatae reiciendis. Natus sit eligendi provident, quas totam esse quidem dignissimos
+            similique reprehenderit, modi molestiae magnam aut ea nesciunt quisquam autem nostrum ut exercitationem iure
+            accusamus! Id consequatur cumque quos, atque voluptatum exercitationem repellat nobis porro deserunt eveniet
+            ab, commodi maiores labore non sequi! Commodi excepturi mollitia quia fugiat unde dolor dolorum, consectetur
+            officiis, praesentium ipsa facilis libero ab cumque voluptas molestias nisi debitis numquam alias maxime.
+            Velit animi dolore quisquam.</p>
+    </p> -->
+
+    <br><br><br>
+    <hr>
+    animation start here -->
+    <p id="animation"> please hover here..</p>
+
+    <!-- postion start hear -->
+
+    <div id="outer">
+
+        <p id="position">this is positions</p>
+    </div>
+
+</body>
+
+</html>

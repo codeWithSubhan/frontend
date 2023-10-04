@@ -1,0 +1,32 @@
+<html>
+    <head></head>
+
+    first <input type="text" id="one"><br>
+    second<input type="text" id="two"><br>
+    third<input type="text" id="three"><br><br>
+    <input type="button" onClick="yo();" value="submit">
+    <body>
+   
+
+        <script>
+        function yo()
+        {
+        var test=document.getElementById("one").value;
+         var clas=document.getElementById("two").value;
+         var stu=document.getElementById("three").value;
+
+         if(test>clas)
+         {
+             console.log(test);
+         }
+         else if(clas>stu){
+             console.log(clas);
+         }
+         else
+         {
+            console.log(stu);
+         }
+        }
+        </script>
+    </body>
+</html>

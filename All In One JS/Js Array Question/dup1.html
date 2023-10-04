@@ -1,0 +1,29 @@
+<html>
+
+<body>
+    <script>
+        function Dup() {
+            let arr = [1, 2, 1, 5, 2, 3, 5, 8, 10]
+            let count = 0;
+
+            for (let i of arr) {
+                count = 0;
+
+                for (let j of arr) {
+
+                    if (i == j) {
+                        count = count + 1;
+                    }
+                }
+                
+                if (count > 1) {
+                    console.log(i)
+
+                }
+            }
+        } Dup()
+
+    </script>
+</body>
+
+</html>

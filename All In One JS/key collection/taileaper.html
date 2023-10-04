@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <script>
+        var leep = new Promise(function (resolve, reject) {
+            var a = 2024
+            if (a % 4 == 0) {
+                resolve(a)
+            }
+            reject(a)
+        })
+        leep.then((rr) => {
+            console.log(rr+" "+ "this is leep year ")
+        })
+        leep.catch((r) => {
+            console.log(r+"this is not leep year ")
+        })
+    </script>
+</body>
+
+</html>

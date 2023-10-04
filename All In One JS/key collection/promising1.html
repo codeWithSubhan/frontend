@@ -1,0 +1,30 @@
+<html>
+
+<body>
+    <script>
+        let even = new Promise
+            (
+
+                function (resolve, reject) {
+                    let number = 10
+                    if (number % 2 == 0) {
+                        
+                        resolve('success')
+                    }
+                    else {
+
+                        reject('failed')
+                    }
+                }
+            )
+
+        even.then((message) => {
+            console.log("even "+message)
+        })
+        even.catch((message) => {
+            console.log("odd "+message)
+        })
+    </script>
+</body>
+
+</html>

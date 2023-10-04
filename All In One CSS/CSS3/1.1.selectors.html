@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /*1 Simple selectors */
+
+        /* 1.the universal selector (*)  */
+        /* *{background-color: yellow;}*{background-color: yellow;} */
+        /* div *{background-color: yellow;} */
+
+        /* 2.element selector */
+        /* p {background-color: yellow;} */
+
+        /* 3.id Selector */
+        /* #myid{background-color: yellow;} */
+
+        /* 4.class Selector */
+        /* write a period (.) character before class name, */
+        /* .myid{background-color: yellow;} */
+        /* p.myid{background-color: yellow;} */
+
+        /* 5.Grouping Selector */
+        /* h2,.second,div,#myid{background-color: yellow;} */
+
+        
+/* ============================== 2.Combinators selector ====================================================================== */
+
+        /*2 Combinators selector */
+        /* A combinator is something that explains the relationship between the selectors. */
+
+        /* 1.descendant selector (space) */
+        /* matches all elements that are descendants(under) of a element. */
+        /* div p{background-color: yellow;} */
+        /* div section p{background-color: yellow;} */
+
+        /* Child Selector (>) */
+        /* selects all elements that are the children */
+        /* div > p{background-color: yellow;} */
+
+        /* Adjacent Sibling Selector (+) */
+        /* "adjacent" means "immediately". effect only one next sibling  */
+        /* div + p{background-color: yellow;} */
+
+        /* General Sibling Selector (~) */
+        /* selects all next siblings  */
+        /* div ~ p{background-color: yellow;} */
+
+
+/* ============================== 3.Attribute Selectors ====================================================================== */
+
+        /* Attribute Selectors */
+        /* select elements with a specified attribute. */
+        /* [type]{background-color: yellow;} */
+        /* input[type]{background-color: yellow;} */
+        /* input[type="email"]{background-color: yellow;}  */
+        /* h2[title="Attr selector"]{background-color: yellow;}  */
+        /* h2[title^="Attr"]{background-color: yellow;}       starting word  */
+        /* img[alt$="son"]{border: 5px dotted blue;}          ending word*/
+        /* img[alt|="img"]{border: 5px dotted blue;}          ending with - */
+        /* img[alt~="of"]{border: 5px dotted blue;}           same word or space around the word */
+        /* img[alt*="f"]{border: 5px dotted blue;}            start end mid all word covered */
+    </style>
+</head>
+
+<body bgcolor="lightgreen">
+
+    <!-- <h2 class="second">A CSS selector selects the HTML element(s) you want to style</h2>
+
+     <h2>simple and combinator selector</h2>
+    <p id="myid">siblings of a div</p>
+
+    <div>
+        <p>DIV START FROM HERE..</p>
+        <p>child of a div.</p>
+        <section>
+            <p>section tag..<span> subhan</span> khan.</p>
+        </section>
+        <p>child of a div.</p>
+        <p>DIV END HERE..</p>
+    </div>
+    <p>immediately div siblings</p>
+    <section>
+        <p>section paragraph</p>
+    </section>
+    <p class="second">sublings of a div.</p>
+    <p>sublings of a div..</p> -->
+
+
+<!-- 
+    <h2 title="Attr selector">Attribute selector</h2>
+
+    <img src="https://www.shutterstock.com/image-photo/little-boy-cutting-vegetables-while-600w-772945393.jpg"
+        width="200" alt="img-of person"><br><br>
+
+    <img src="https://www.shutterstock.com/image-photo/little-boy-cutting-vegetables-while-600w-772945393.jpg"
+        width="200" alt=" img of family"><br><br>
+
+    Name:<input type="text"><br><br>
+    Email:<input type="email"><br><br> -->
+
+</body>
+
+</html>

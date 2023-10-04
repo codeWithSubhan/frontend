@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get and change html element with the help of DOM</title>
+    <style>
+        .edited {
+
+            width: 500px;
+            margin: auto;
+        }
+
+        .second {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="head">HTML DOM</h1>
+    <div id="main" class="outer" style="border: 2px solid red" onclick="hello()">
+        <ul id="demo">
+            <li class="list"><a href="">one</a></li>
+            <li class="list"><a href="">tow</a></li>
+            <li class="list"><a href="">three</a></li>
+            <li class="list"><a href="">four</a></li>
+        </ul>
+    </div>
+
+    <script>
+
+        // target html dom object 
+        // console.log(document.getElementById("demo").innerText)
+        // console.log(document.getElementById("demo").innerHTML)
+
+        // Attribut value
+        // console.log(document.getElementById("main").getAttribute("onClick"))
+        // console.log(document.getElementById("main").getAttributeNode("onClick"))
+        // console.log(document.getElementById("main").getAttributeNode("onClick").value)
+
+        // object return 
+        // console.log(document.getElementById("main").attributes)
+        // console.log(document.getElementById("main").attributes[1])
+        // console.log(document.getElementById("main").attributes[1].value)
+        // console.log(document.getElementById("main").attributes[1].name)
+
+
+        // target and change html dom object 
+        // console.log(document.getElementById("head").innerText="<h1>hellow</h1>")
+        // console.log(document.getElementById("head").innerHTML="hellow")
+        // console.log(document.getElementById("demo").setAttribute("style","border:2px solid black"))
+        // console.log(document.getElementById("main").removeAttribute("style"))
+
+
+
+        // console.log(document.querySelector(".list"))
+        // console.log(document.querySelector(".list").innerHTML="md subhan ahemad")
+        // console.log(document.querySelector(".list").setAttribute("style","Background-color: green"))
+        // console.log(document.querySelectorAll(".list"))
+        // console.log(document.querySelectorAll(".list")[1].innerHTML="query selctor all")
+        // console.log(document.querySelectorAll("#demo li")[2].innerText)
+
+
+        // console.log(document.querySelector("#main").style.border)
+        // console.log(document.querySelector("#main").style.border="5px dotted blue")
+        // console.log(document.querySelector("#main").style.backgroundColor="yellow")
+
+        // console.log(document.querySelector("#main").className="edited second")  //remove all cls add new class
+
+        // console.log(document.querySelector("#main").classList="edited second")  //same classname
+        // console.log(document.querySelector("#main").classList.replace("outer","insertcls"))
+        // console.log(document.querySelector("#main").classList.add("edited", "second"))  //don't remove class
+        // console.log(document.querySelector("#main").classList.remove("edited", "second"))
+        // console.log(document.querySelector("#main").classList.length)
+        // console.log(document.querySelector("#main").classList.item(0))
+
+        //    document.getElementById("main").addEventListener("click",abc)
+        //     function abc(){
+
+        //         // document.getElementById("main").classList.toggle("second")
+        //         var a=document.getElementById("main").classList.contains("second")
+        //         console.log(a)
+        //     }    
+    
+
+
+    </script>
+</body>
+
+</html>

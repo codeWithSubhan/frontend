@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index,visibility</title>
+</head>
+<style>
+.boox{
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+}
+#box1{
+    border: 2px solid red;
+    position: relative;
+    top: 34px;
+    background-color: grey;
+    /* visibility: hidden; */
+    /* display: none; */
+    /* z-index: 34; */
+}
+#box2{
+    border: 2px solid green;
+    position: relative;
+    top: 2px;
+    background-color: honeydew;
+    width: 110px;
+    /* z-index: 35; */
+    
+    
+    
+}
+</style>
+<body>
+    <div class="boox"id="box1"></div>
+    <div class="boox"id="box2"></div>
+</body>
+</html>

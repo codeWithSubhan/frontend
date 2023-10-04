@@ -1,0 +1,52 @@
+<html>
+
+<body>
+    <script>
+        function postiveNag() {
+            var a = [9, 4, -2, -1, 5, 0, -5, -3, -3, 1, 7, 8, 2, 2]
+            var pos = [], nag = [], count = 0, count1 = 0, pos1 = 0, nag1 = 0;
+            var length = a.length;
+
+            for (let i of a) {
+                if (i >= 0) {
+                    pos.push(i)
+                }
+                else {
+                    nag.push(i)
+                }
+            }
+
+
+            a.splice(0, a.length)
+            pos1 = pos.length - 1
+            nag1 = nag.length - 1
+
+            for (let i = 0; i <= length - 1; i++) {
+
+                if (count <= pos1) {
+                    
+                    a.push(pos[i])
+                    count += 1
+
+                    if (count1 <= nag1) {
+                        count1 += 1
+                        a.push(nag[i])
+                    }
+                }
+                else {
+                    if (count1 <= nag1) {
+                        count1 += 1
+                        a.push(nag[i])
+                    } else {
+                        break;
+                    }
+                }
+            }
+
+            console.log(a)
+
+        } postiveNag()
+    </script>
+</body>
+
+</html>

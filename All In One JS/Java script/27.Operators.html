@@ -1,0 +1,46 @@
+<script>
+    /////////////////////////////////////// [ ?.(optional chaining) ] //////////////////////////////////////////////////
+    // In JavaScript, ?.(optional chaining) operator 
+    // is used to safely access properties and methods of an object when the object might be null or undefined.
+    // It prevents your code from throwing an error if you try to access a property or call a method on an object that
+    // doesn't exist. Instead of throwing an error, it simply returns undefined.
+
+    const person = {
+        name: 'John',
+        address: {
+            city: 'New York',
+            zipCode: '10001',
+        },
+    };
+
+    // Without optional chaining (may throw an error if address is null or undefined)
+    // const city = person.address1.city; // Throws an error if address is null or undefined
+
+    // With optional chaining (returns undefined if address is null or undefined)
+    // const citySafe = person.address1?.city; // No error, citySafe is undefined if address is null or undefined
+    // console.log(citySafe, city)
+
+
+    /////////////////////////////////////// [ ?? nullish coalescing ] //////////////////////////////////////////////////
+    // In JavaScript, the ?? operator is known as the "nullish coalescing operator."
+    // It is used to provide a default value for a variable if the variable on the left - hand side is null or undefined.
+    // It helps avoid using a default value when the variable is set to other "falsy" values like 0, false, NaN, or an empty string ''.
+    // It's same as or operator but different is that it's have it's own nullish value null, undefined
+
+    console.log(undefined || "heena")
+    console.log(undefined ?? "heena")
+
+    console.log(null || "iram")
+    console.log(null ?? "iram")
+
+    console.log(0 || "subhan")    //subhan
+    console.log(0 ?? "subhan")    //0
+    // it only return default value when null or undefined 
+
+    console.log('' || "taiyeb")
+    console.log('' ?? "taiyeb")
+
+    console.log(NaN || "abdul")
+    console.log(NaN ?? "abdul")
+
+</script>

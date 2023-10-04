@@ -1,0 +1,43 @@
+.box{
+    border: 2px solid black;
+    width: 600px;
+    height: 200px;
+    border-radius: 5px;
+    /* box-shadow: 10px 10px 10px green; */
+    transition-duration: 0.5s;
+    margin: auto;
+}
+
+.box:hover{
+    
+    box-shadow: 10px 10px 10px green;
+
+}
+.input-box{
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid black;
+    padding-left: 23px;
+    
+}
+.butn{
+    width: 200px;
+    height: 40PX;
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+
+}
+.butn:hover{
+    cursor: pointer;
+    background-color: chocolate;
+
+}
+.input-box:focus{
+color: darkblue;
+background-color: darkturquoise;
+}
+

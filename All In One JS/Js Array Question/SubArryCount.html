@@ -1,0 +1,38 @@
+<html>
+
+<body>
+    <script>
+        function subArray() {
+            var array = [1, 5, 7, 1]
+            var sum = 0, k = 6, f = 0, count = 0;
+
+            for (let i = 0; i <= array.length - 1; i++) {
+                sum = 0;
+                for (let j = i + 1; j <= array.length - 1; j++) {
+
+                    sum = sum + array[j] + array[i]
+
+                    if (sum == k) {
+
+                        f = 1;
+                        count = count + 1;
+                        sum = 0;
+                    }
+                    else if (sum > k) {
+                        sum = 0;
+                    }
+
+                }
+            }
+            if (f == 0) {
+                console.log("sorry not found:")
+            }
+            else {
+                console.log(count)
+            }
+        } subArray()
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" id="main">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversal methods</title>
+</head>
+
+<body>
+    <div id="parent">
+        <ul id="child">
+            <li>First Child</li>
+            <li id="second">second Child</li><!-- commented -->
+            <li>Third Child</li>
+            <li>Fourth Child</li>
+        </ul>
+    </div>
+
+    <script>
+        // console.log(document.getElementById("parent").parentElement)
+        // console.log(document.body.parentElement)
+
+        // document.getElementById("child").parentElement.style.border="2px solid red"
+        // console.log(document.getElementById("main").parentElement)
+        // console.log(document.getElementById("main").parentNode)
+
+        // console.log(document.getElementById("child").children)
+        // console.log(document.getElementById("child").children[1].innerHTML="2nd child is this understand")
+        // console.log(document.getElementById("child").childNodes)            //node target everythings space text comments
+
+        // console.log(document.getElementById("child").firstElementChild)
+        // console.log(document.getElementById("child").lastElementChild)
+
+        // console.log(document.getElementById("parent").firstChild)        //same as Node
+        // console.log(document.getElementById("parent").lastChild)
+
+        // console.log(document.getElementById("second").nextElementSibling.innerHTML)
+        // console.log(document.getElementById("second").previousElementSibling.innerHTML)
+
+        // console.log(document.getElementById("second").nextSibling)         //same as Node
+        // console.log(document.getElementById("second").previousSibling)
+
+    </script>
+</body>
+
+</html>

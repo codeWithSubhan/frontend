@@ -1,0 +1,29 @@
+.navigation_bar{
+
+    display:flex;
+    background-color: black;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.nav_bar{
+    /* margin-left: 23px; */
+    font-size: 23px;
+    padding: 2px;
+    margin: auto;
+    
+}
+.nav_bar a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+
+    
+}
+.nav_bar a:hover{
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+a:active{
+    color:coral;
+}
